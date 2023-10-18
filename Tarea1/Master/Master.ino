@@ -42,7 +42,7 @@ void loop() {
       digitalWrite(slaveSelectPin, HIGH); //disable slave select
     }
     else{
-      byte message = AnalogRead(inputPin)/128;
+      byte message = AnalogRead(inputPin)/128; //0x00-0x07 message
       digitalWrite(slaveSelectPin, LOW); //enable slave select
       SPI.transfer(message); //send message
       digitalWrite(slaveSelectPin, HIGH); //disable slave select
