@@ -1,0 +1,5 @@
+module spiSlave(SLK, MOSI, MISO, CS);
+input SLK;
+input MOSI;
+output MISO;
+input CS;
