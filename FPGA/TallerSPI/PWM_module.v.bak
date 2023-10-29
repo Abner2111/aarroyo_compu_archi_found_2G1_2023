@@ -1,0 +1,16 @@
+module PWM_module (
+	input logic [3:0] Porcentaje,
+	input SLK,
+   output logic Velocidad,
+   output logic display
+);
+
+[3:0] numero_cliclos = 10
+reg [3:0]counter //0-9
+logic maxCont;
+counter = counter + 1;
+reg [3:0]porcentaje //vaina que da el arduino
+reg pwm;
+reg completed;
+reg [3:0] comparison;
+pwm <= porcentaje>counter;

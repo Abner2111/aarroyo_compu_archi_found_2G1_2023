@@ -1,23 +1,88 @@
 |SPIlave
-SLK => MISO~reg0.CLK
-SLK => LED[0]~reg0.CLK
-SLK => LED[1]~reg0.CLK
-SLK => LED[2]~reg0.CLK
-SLK => LED[3]~reg0.CLK
-SLK => bit0.CLK
-SLK => bit1.CLK
-SLK => bit2.CLK
-SLK => bit3.CLK
-SLK => bit4.CLK
-SLK => bit5.CLK
-SLK => bit6.CLK
-SLK => bit7.CLK
+SLK => SLK.IN1
 MOSI => bit0.DATAIN
 CS => MISO.IN1
-MISO <= MISO~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LED[0] <= LED[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LED[1] <= LED[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LED[2] <= LED[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LED[3] <= LED[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MISO << MISO~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[0] << LED[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] << LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] << LED[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] << LED[3].DB_MAX_OUTPUT_PORT_TYPE
+display[0] << BCD_module:bdc1.port4
+display[1] << BCD_module:bdc1.port4
+display[2] << BCD_module:bdc1.port4
+display[3] << BCD_module:bdc1.port4
+display[4] << BCD_module:bdc1.port4
+display[5] << BCD_module:bdc1.port4
+display[6] << BCD_module:bdc1.port4
+Velocidad << PWM_module:pwm1.Velocidad
+
+
+|SPIlave|PWM_module:pwm1
+Porcentaje[0] => LessThan0.IN4
+Porcentaje[1] => LessThan0.IN3
+Porcentaje[2] => LessThan0.IN2
+Porcentaje[3] => LessThan0.IN1
+SLK => completed.CLK
+SLK => comparison[0].CLK
+SLK => comparison[1].CLK
+SLK => comparison[2].CLK
+SLK => comparison[3].CLK
+SLK => Velocidad~reg0.CLK
+SLK => counter[0].CLK
+SLK => counter[1].CLK
+SLK => counter[2].CLK
+SLK => counter[3].CLK
+Velocidad <= Velocidad~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|BCD_module:bdc1
+A => display.IN0
+A => display.IN0
+A => display.IN0
+A => display.IN0
+A => display.IN0
+A => display.IN0
+A => display.IN0
+B => display.IN0
+B => display.IN1
+B => display.IN1
+B => display.IN1
+B => display.IN0
+B => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+C => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+D => display.IN1
+display[0] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
 
 
