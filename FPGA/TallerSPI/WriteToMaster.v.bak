@@ -1,0 +1,13 @@
+module WriteToMaster(
+    input SLK,
+    input CS,
+    output reg MISO,
+    output reg [3:0] LED,
+
+);
+
+always @ (posedge SLK & CS) begin
+	MISO <= bit7;
+end
+
+endmodule

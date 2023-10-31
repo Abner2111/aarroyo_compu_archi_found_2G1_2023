@@ -3,51 +3,627 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 100C Model Setup 'SLK'
-Slack : -0.175
-TNS   : -0.187
+Slack : -5.378
+TNS   : -88.606
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div19|q'
+Slack : -5.227
+TNS   : -5.227
+
+Type  : Slow 1100mV 100C Model Setup 'CS'
+Slack : -4.987
+TNS   : -83.994
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div18|q'
+Slack : -2.065
+TNS   : -2.065
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div12|q'
+Slack : -1.714
+TNS   : -1.714
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div17|q'
+Slack : -1.702
+TNS   : -1.702
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div13|q'
+Slack : -1.675
+TNS   : -1.675
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div0|q'
+Slack : -1.674
+TNS   : -1.674
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div14|q'
+Slack : -1.661
+TNS   : -1.661
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div1|q'
+Slack : -1.658
+TNS   : -1.658
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div11|q'
+Slack : -1.635
+TNS   : -1.635
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div15|q'
+Slack : -1.582
+TNS   : -1.582
+
+Type  : Slow 1100mV 100C Model Setup 'divideClock:div16|q'
+Slack : -1.523
+TNS   : -1.523
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div16|q'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div12|q'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div15|q'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div14|q'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div1|q'
+Slack : 0.580
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div11|q'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div0|q'
+Slack : 0.663
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div17|q'
+Slack : 0.669
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div13|q'
+Slack : 0.680
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div18|q'
+Slack : 0.758
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'CS'
+Slack : 1.417
+TNS   : 0.000
 
 Type  : Slow 1100mV 100C Model Hold 'SLK'
-Slack : 0.265
+Slack : 1.614
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'divideClock:div19|q'
+Slack : 2.998
 TNS   : 0.000
 
 Type  : Slow 1100mV 100C Model Minimum Pulse Width 'SLK'
+Slack : -0.794
+TNS   : -26.906
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'CS'
+Slack : -0.660
+TNS   : -24.866
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div18|q'
 Slack : -0.538
-TNS   : -10.906
+TNS   : -0.831
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div12|q'
+Slack : -0.538
+TNS   : -0.823
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div16|q'
+Slack : -0.538
+TNS   : -0.794
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div14|q'
+Slack : -0.538
+TNS   : -0.773
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div1|q'
+Slack : -0.538
+TNS   : -0.772
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div0|q'
+Slack : -0.538
+TNS   : -0.770
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div17|q'
+Slack : -0.538
+TNS   : -0.770
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div11|q'
+Slack : -0.538
+TNS   : -0.769
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div13|q'
+Slack : -0.538
+TNS   : -0.769
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div19|q'
+Slack : -0.538
+TNS   : -0.769
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'divideClock:div15|q'
+Slack : -0.538
+TNS   : -0.768
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div19|q'
+Slack : -5.162
+TNS   : -5.162
 
 Type  : Slow 1100mV -40C Model Setup 'SLK'
-Slack : -0.186
-TNS   : -0.186
+Slack : -5.119
+TNS   : -84.529
+
+Type  : Slow 1100mV -40C Model Setup 'CS'
+Slack : -4.757
+TNS   : -81.269
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div18|q'
+Slack : -2.123
+TNS   : -2.123
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div13|q'
+Slack : -1.863
+TNS   : -1.863
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div17|q'
+Slack : -1.860
+TNS   : -1.860
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div0|q'
+Slack : -1.846
+TNS   : -1.846
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div14|q'
+Slack : -1.842
+TNS   : -1.842
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div1|q'
+Slack : -1.838
+TNS   : -1.838
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div11|q'
+Slack : -1.820
+TNS   : -1.820
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div15|q'
+Slack : -1.782
+TNS   : -1.782
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div16|q'
+Slack : -1.735
+TNS   : -1.735
+
+Type  : Slow 1100mV -40C Model Setup 'divideClock:div12|q'
+Slack : -1.649
+TNS   : -1.649
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div12|q'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div16|q'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div15|q'
+Slack : 0.723
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div14|q'
+Slack : 0.771
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div1|q'
+Slack : 0.779
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div11|q'
+Slack : 0.831
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div17|q'
+Slack : 0.840
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div0|q'
+Slack : 0.848
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div18|q'
+Slack : 0.868
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div13|q'
+Slack : 0.877
+TNS   : 0.000
 
 Type  : Slow 1100mV -40C Model Hold 'SLK'
-Slack : 0.247
+Slack : 1.374
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'CS'
+Slack : 1.389
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'divideClock:div19|q'
+Slack : 2.933
 TNS   : 0.000
 
 Type  : Slow 1100mV -40C Model Minimum Pulse Width 'SLK'
+Slack : -0.748
+TNS   : -26.254
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'CS'
+Slack : -0.720
+TNS   : -25.691
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div18|q'
 Slack : -0.538
-TNS   : -10.076
+TNS   : -0.819
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div12|q'
+Slack : -0.538
+TNS   : -0.809
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div16|q'
+Slack : -0.538
+TNS   : -0.781
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div13|q'
+Slack : -0.538
+TNS   : -0.773
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div19|q'
+Slack : -0.538
+TNS   : -0.773
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div0|q'
+Slack : -0.538
+TNS   : -0.772
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div15|q'
+Slack : -0.538
+TNS   : -0.772
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div17|q'
+Slack : -0.538
+TNS   : -0.772
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div11|q'
+Slack : -0.538
+TNS   : -0.771
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div14|q'
+Slack : -0.538
+TNS   : -0.769
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'divideClock:div1|q'
+Slack : -0.538
+TNS   : -0.769
 
 Type  : Fast 1100mV 100C Model Setup 'SLK'
-Slack : 0.385
+Slack : -3.791
+TNS   : -57.472
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div19|q'
+Slack : -2.898
+TNS   : -2.898
+
+Type  : Fast 1100mV 100C Model Setup 'CS'
+Slack : -2.860
+TNS   : -42.621
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div12|q'
+Slack : -1.196
+TNS   : -1.196
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div18|q'
+Slack : -1.064
+TNS   : -1.064
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div17|q'
+Slack : -0.787
+TNS   : -0.787
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div14|q'
+Slack : -0.761
+TNS   : -0.761
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div1|q'
+Slack : -0.760
+TNS   : -0.760
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div0|q'
+Slack : -0.751
+TNS   : -0.751
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div13|q'
+Slack : -0.750
+TNS   : -0.750
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div11|q'
+Slack : -0.727
+TNS   : -0.727
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div15|q'
+Slack : -0.715
+TNS   : -0.715
+
+Type  : Fast 1100mV 100C Model Setup 'divideClock:div16|q'
+Slack : -0.678
+TNS   : -0.678
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div16|q'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div15|q'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div14|q'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div1|q'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div11|q'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div0|q'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div13|q'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div17|q'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div18|q'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div12|q'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'CS'
+Slack : 0.552
 TNS   : 0.000
 
 Type  : Fast 1100mV 100C Model Hold 'SLK'
-Slack : 0.141
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'divideClock:div19|q'
+Slack : 1.154
 TNS   : 0.000
 
 Type  : Fast 1100mV 100C Model Minimum Pulse Width 'SLK'
-Slack : -0.385
-TNS   : -5.825
+Slack : -0.805
+TNS   : -26.301
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'CS'
+Slack : -0.698
+TNS   : -20.809
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div18|q'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div12|q'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div16|q'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div11|q'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div15|q'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div19|q'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div13|q'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div17|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div0|q'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div14|q'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'divideClock:div1|q'
+Slack : 0.162
+TNS   : 0.000
 
 Type  : Fast 1100mV -40C Model Setup 'SLK'
-Slack : 0.423
+Slack : -3.277
+TNS   : -49.249
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div19|q'
+Slack : -2.743
+TNS   : -2.743
+
+Type  : Fast 1100mV -40C Model Setup 'CS'
+Slack : -2.559
+TNS   : -32.580
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div12|q'
+Slack : -0.973
+TNS   : -0.973
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div18|q'
+Slack : -0.905
+TNS   : -0.905
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div17|q'
+Slack : -0.722
+TNS   : -0.722
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div14|q'
+Slack : -0.699
+TNS   : -0.699
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div1|q'
+Slack : -0.698
+TNS   : -0.698
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div13|q'
+Slack : -0.696
+TNS   : -0.696
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div0|q'
+Slack : -0.691
+TNS   : -0.691
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div15|q'
+Slack : -0.679
+TNS   : -0.679
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div11|q'
+Slack : -0.678
+TNS   : -0.678
+
+Type  : Fast 1100mV -40C Model Setup 'divideClock:div16|q'
+Slack : -0.636
+TNS   : -0.636
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div16|q'
+Slack : -0.029
+TNS   : -0.029
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div15|q'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div14|q'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div1|q'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div11|q'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div0|q'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div13|q'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div17|q'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div18|q'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div12|q'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'CS'
+Slack : 0.382
 TNS   : 0.000
 
 Type  : Fast 1100mV -40C Model Hold 'SLK'
-Slack : 0.121
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'divideClock:div19|q'
+Slack : 0.976
 TNS   : 0.000
 
 Type  : Fast 1100mV -40C Model Minimum Pulse Width 'SLK'
-Slack : -0.451
-TNS   : -7.935
+Slack : -0.794
+TNS   : -26.419
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'CS'
+Slack : -0.759
+TNS   : -23.292
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div12|q'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div18|q'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div11|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div13|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div15|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div19|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div17|q'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div16|q'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div0|q'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div14|q'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'divideClock:div1|q'
+Slack : 0.162
+TNS   : 0.000
 
 ------------------------------------------------------------

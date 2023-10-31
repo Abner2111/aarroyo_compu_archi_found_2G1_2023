@@ -1,20 +1,140 @@
 |SPIlave
-SLK => SLK.IN1
+SLK => SLK.IN2
 MOSI => bit0.DATAIN
-CS => MISO.IN1
-MISO << MISO~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LED[0] << LED[0].DB_MAX_OUTPUT_PORT_TYPE
-LED[1] << LED[1].DB_MAX_OUTPUT_PORT_TYPE
-LED[2] << LED[2].DB_MAX_OUTPUT_PORT_TYPE
-LED[3] << LED[3].DB_MAX_OUTPUT_PORT_TYPE
-display[0] << BCD_module:bdc1.port4
-display[1] << BCD_module:bdc1.port4
-display[2] << BCD_module:bdc1.port4
-display[3] << BCD_module:bdc1.port4
-display[4] << BCD_module:bdc1.port4
-display[5] << BCD_module:bdc1.port4
-display[6] << BCD_module:bdc1.port4
-Velocidad << PWM_module:pwm1.Velocidad
+CS => CS.IN1
+MISO <= WriteToMaster:wtm.MISO
+LED[0] <= LED[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= LED[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= LED[3].DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= BCD_module:bdc1.display
+display[1] <= BCD_module:bdc1.display
+display[2] <= BCD_module:bdc1.display
+display[3] <= BCD_module:bdc1.display
+display[4] <= BCD_module:bdc1.display
+display[5] <= BCD_module:bdc1.display
+display[6] <= BCD_module:bdc1.display
+Velocidad <= PWM_module:pwm1.pwm
+
+
+|SPIlave|divideClock:div0
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div1
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div2
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div3
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div4
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div5
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div6
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div7
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div8
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div9
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div10
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div11
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div12
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div13
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div14
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div15
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div16
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div17
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div18
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|divideClock:div19
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SPIlave|PWM_module:pwm1
@@ -23,16 +143,16 @@ Porcentaje[1] => LessThan0.IN3
 Porcentaje[2] => LessThan0.IN2
 Porcentaje[3] => LessThan0.IN1
 SLK => completed.CLK
-SLK => comparison[0].CLK
-SLK => comparison[1].CLK
-SLK => comparison[2].CLK
-SLK => comparison[3].CLK
-SLK => Velocidad~reg0.CLK
 SLK => counter[0].CLK
 SLK => counter[1].CLK
 SLK => counter[2].CLK
 SLK => counter[3].CLK
-Velocidad <= Velocidad~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SLK => comparison[0].CLK
+SLK => comparison[1].CLK
+SLK => comparison[2].CLK
+SLK => comparison[3].CLK
+SLK => pwm~reg0.CLK
+pwm <= pwm~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SPIlave|BCD_module:bdc1
@@ -43,6 +163,7 @@ A => display.IN0
 A => display.IN0
 A => display.IN0
 A => display.IN0
+B => display.IN0
 B => display.IN0
 B => display.IN1
 B => display.IN1
@@ -84,5 +205,19 @@ display[3] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[4] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SPIlave|WriteToMaster:wtm
+SLK => always0.IN0
+CS => always0.IN1
+bit7 => Mux0.IN7
+bit6 => Mux0.IN6
+bit5 => Mux0.IN5
+bit4 => Mux0.IN4
+bit3 => Mux0.IN3
+bit2 => Mux0.IN2
+bit1 => Mux0.IN1
+bit0 => Mux0.IN0
+MISO <= MISO~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
