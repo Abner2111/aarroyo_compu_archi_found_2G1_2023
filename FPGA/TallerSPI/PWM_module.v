@@ -23,18 +23,21 @@ end
 
 
 
-
 	always @ (posedge SLK) begin
 		
 		pwm <= Porcentaje > counter;
 	
       comparison <= ~(counter ^ numero_cliclos); //cuando sean iguales b'1111
-		counter <= counter + 4'b0001;
+		counter <= counter + 4'b0001 &  !completed ;
 
 		completed <= comparison[0] & comparison[1] & comparison[2] & comparison[3]; //cuando comparison es 1111 completed 1
 
 		counter <= counter + 4'b0001 &  completed + 4'b0001 &  completed + 4'b0001 & completed + 4'b0001 &  completed+ 4'b0001 &  completed;
-   end 
+   
+  $display("counter: %h", counter);  
+  $display("comparison: %h", comparison);  
+  $display("completed: %h", completed);
+	end 
 	
 	//assign Velocidad = velo1;
 
