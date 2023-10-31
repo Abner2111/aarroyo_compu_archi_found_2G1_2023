@@ -1,5 +1,5 @@
 Timing Analyzer report for SPIlave
-Mon Oct 30 21:37:51 2023
+Mon Oct 30 23:07:50 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -106,8 +106,8 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   2.3%      ;
-;     Processor 3            ;   2.2%      ;
-;     Processor 4            ;   2.1%      ;
+;     Processor 3            ;   2.3%      ;
+;     Processor 4            ;   2.3%      ;
 +----------------------------+-------------+
 
 
@@ -132,14 +132,15 @@ https://fpgasoftware.intel.com/eula.
 +---------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
 
 
-+--------------------------------------------------+
-; Slow 1100mV 100C Model Fmax Summary              ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 109.53 MHz ; 109.53 MHz      ; CS         ;      ;
-; 192.64 MHz ; 192.64 MHz      ; SLK        ;      ;
-+------------+-----------------+------------+------+
++-----------------------------------------------------------+
+; Slow 1100mV 100C Model Fmax Summary                       ;
++------------+-----------------+---------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
++------------+-----------------+---------------------+------+
+; 94.06 MHz  ; 94.06 MHz       ; CS                  ;      ;
+; 171.85 MHz ; 171.85 MHz      ; SLK                 ;      ;
+; 380.37 MHz ; 380.37 MHz      ; divideClock:div19|q ;      ;
++------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -154,19 +155,19 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; SLK                 ; -5.378 ; -88.606       ;
-; divideClock:div19|q ; -5.227 ; -5.227        ;
-; CS                  ; -4.987 ; -83.994       ;
-; divideClock:div18|q ; -2.065 ; -2.065        ;
-; divideClock:div12|q ; -1.714 ; -1.714        ;
-; divideClock:div17|q ; -1.702 ; -1.702        ;
-; divideClock:div13|q ; -1.675 ; -1.675        ;
-; divideClock:div0|q  ; -1.674 ; -1.674        ;
-; divideClock:div14|q ; -1.661 ; -1.661        ;
-; divideClock:div1|q  ; -1.658 ; -1.658        ;
-; divideClock:div11|q ; -1.635 ; -1.635        ;
-; divideClock:div15|q ; -1.582 ; -1.582        ;
-; divideClock:div16|q ; -1.523 ; -1.523        ;
+; SLK                 ; -6.370 ; -88.282       ;
+; CS                  ; -5.287 ; -72.550       ;
+; divideClock:div19|q ; -5.189 ; -29.368       ;
+; divideClock:div14|q ; -1.952 ; -1.952        ;
+; divideClock:div1|q  ; -1.851 ; -1.851        ;
+; divideClock:div12|q ; -1.825 ; -1.825        ;
+; divideClock:div17|q ; -1.768 ; -1.768        ;
+; divideClock:div11|q ; -1.685 ; -1.685        ;
+; divideClock:div18|q ; -1.676 ; -1.676        ;
+; divideClock:div0|q  ; -1.652 ; -1.652        ;
+; divideClock:div15|q ; -1.652 ; -1.652        ;
+; divideClock:div16|q ; -1.643 ; -1.643        ;
+; divideClock:div13|q ; -1.621 ; -1.621        ;
 +---------------------+--------+---------------+
 
 
@@ -175,19 +176,19 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; divideClock:div16|q ; 0.405 ; 0.000         ;
-; divideClock:div12|q ; 0.449 ; 0.000         ;
-; divideClock:div15|q ; 0.550 ; 0.000         ;
-; divideClock:div14|q ; 0.571 ; 0.000         ;
-; divideClock:div1|q  ; 0.580 ; 0.000         ;
-; divideClock:div11|q ; 0.621 ; 0.000         ;
-; divideClock:div0|q  ; 0.663 ; 0.000         ;
-; divideClock:div17|q ; 0.669 ; 0.000         ;
-; divideClock:div13|q ; 0.680 ; 0.000         ;
-; divideClock:div18|q ; 0.758 ; 0.000         ;
-; CS                  ; 1.417 ; 0.000         ;
-; SLK                 ; 1.614 ; 0.000         ;
-; divideClock:div19|q ; 2.998 ; 0.000         ;
+; divideClock:div18|q ; 0.494 ; 0.000         ;
+; divideClock:div13|q ; 0.549 ; 0.000         ;
+; divideClock:div16|q ; 0.579 ; 0.000         ;
+; divideClock:div15|q ; 0.581 ; 0.000         ;
+; divideClock:div11|q ; 0.609 ; 0.000         ;
+; divideClock:div12|q ; 0.626 ; 0.000         ;
+; divideClock:div1|q  ; 0.640 ; 0.000         ;
+; divideClock:div17|q ; 0.652 ; 0.000         ;
+; divideClock:div0|q  ; 0.735 ; 0.000         ;
+; divideClock:div14|q ; 0.775 ; 0.000         ;
+; divideClock:div19|q ; 0.952 ; 0.000         ;
+; SLK                 ; 1.422 ; 0.000         ;
+; CS                  ; 1.732 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -208,19 +209,19 @@ No paths to report.
 +---------------------+--------+---------------------+
 ; Clock               ; Slack  ; End Point TNS       ;
 +---------------------+--------+---------------------+
-; SLK                 ; -0.794 ; -26.906             ;
-; CS                  ; -0.660 ; -24.866             ;
-; divideClock:div18|q ; -0.538 ; -0.831              ;
-; divideClock:div12|q ; -0.538 ; -0.823              ;
-; divideClock:div16|q ; -0.538 ; -0.794              ;
-; divideClock:div14|q ; -0.538 ; -0.773              ;
-; divideClock:div1|q  ; -0.538 ; -0.772              ;
-; divideClock:div0|q  ; -0.538 ; -0.770              ;
-; divideClock:div17|q ; -0.538 ; -0.770              ;
-; divideClock:div11|q ; -0.538 ; -0.769              ;
-; divideClock:div13|q ; -0.538 ; -0.769              ;
-; divideClock:div19|q ; -0.538 ; -0.769              ;
-; divideClock:div15|q ; -0.538 ; -0.768              ;
+; SLK                 ; -0.794 ; -23.071             ;
+; CS                  ; -0.687 ; -21.687             ;
+; divideClock:div19|q ; -0.538 ; -7.701              ;
+; divideClock:div18|q ; -0.538 ; -0.819              ;
+; divideClock:div14|q ; -0.538 ; -0.809              ;
+; divideClock:div1|q  ; -0.538 ; -0.794              ;
+; divideClock:div12|q ; -0.538 ; -0.792              ;
+; divideClock:div16|q ; -0.538 ; -0.772              ;
+; divideClock:div11|q ; -0.538 ; -0.771              ;
+; divideClock:div17|q ; -0.538 ; -0.771              ;
+; divideClock:div13|q ; -0.538 ; -0.770              ;
+; divideClock:div15|q ; -0.538 ; -0.770              ;
+; divideClock:div0|q  ; -0.538 ; -0.769              ;
 +---------------------+--------+---------------------+
 
 
@@ -230,14 +231,15 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------+
-; Slow 1100mV -40C Model Fmax Summary              ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 109.12 MHz ; 109.12 MHz      ; CS         ;      ;
-; 201.86 MHz ; 201.86 MHz      ; SLK        ;      ;
-+------------+-----------------+------------+------+
++-----------------------------------------------------------+
+; Slow 1100mV -40C Model Fmax Summary                       ;
++------------+-----------------+---------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
++------------+-----------------+---------------------+------+
+; 96.01 MHz  ; 96.01 MHz       ; CS                  ;      ;
+; 177.75 MHz ; 177.75 MHz      ; SLK                 ;      ;
+; 367.24 MHz ; 367.24 MHz      ; divideClock:div19|q ;      ;
++------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -246,19 +248,19 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; divideClock:div19|q ; -5.162 ; -5.162        ;
-; SLK                 ; -5.119 ; -84.529       ;
-; CS                  ; -4.757 ; -81.269       ;
-; divideClock:div18|q ; -2.123 ; -2.123        ;
-; divideClock:div13|q ; -1.863 ; -1.863        ;
-; divideClock:div17|q ; -1.860 ; -1.860        ;
-; divideClock:div0|q  ; -1.846 ; -1.846        ;
-; divideClock:div14|q ; -1.842 ; -1.842        ;
-; divideClock:div1|q  ; -1.838 ; -1.838        ;
-; divideClock:div11|q ; -1.820 ; -1.820        ;
-; divideClock:div15|q ; -1.782 ; -1.782        ;
-; divideClock:div16|q ; -1.735 ; -1.735        ;
-; divideClock:div12|q ; -1.649 ; -1.649        ;
+; SLK                 ; -6.121 ; -84.250       ;
+; CS                  ; -5.124 ; -70.279       ;
+; divideClock:div19|q ; -5.108 ; -29.251       ;
+; divideClock:div14|q ; -2.032 ; -2.032        ;
+; divideClock:div17|q ; -1.936 ; -1.936        ;
+; divideClock:div11|q ; -1.853 ; -1.853        ;
+; divideClock:div16|q ; -1.840 ; -1.840        ;
+; divideClock:div1|q  ; -1.831 ; -1.831        ;
+; divideClock:div15|q ; -1.826 ; -1.826        ;
+; divideClock:div13|q ; -1.810 ; -1.810        ;
+; divideClock:div12|q ; -1.759 ; -1.759        ;
+; divideClock:div18|q ; -1.660 ; -1.660        ;
+; divideClock:div0|q  ; -1.653 ; -1.653        ;
 +---------------------+--------+---------------+
 
 
@@ -267,19 +269,19 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; divideClock:div12|q ; 0.438 ; 0.000         ;
-; divideClock:div16|q ; 0.594 ; 0.000         ;
-; divideClock:div15|q ; 0.723 ; 0.000         ;
-; divideClock:div14|q ; 0.771 ; 0.000         ;
-; divideClock:div1|q  ; 0.779 ; 0.000         ;
-; divideClock:div11|q ; 0.831 ; 0.000         ;
-; divideClock:div17|q ; 0.840 ; 0.000         ;
-; divideClock:div0|q  ; 0.848 ; 0.000         ;
-; divideClock:div18|q ; 0.868 ; 0.000         ;
-; divideClock:div13|q ; 0.877 ; 0.000         ;
-; SLK                 ; 1.374 ; 0.000         ;
-; CS                  ; 1.389 ; 0.000         ;
-; divideClock:div19|q ; 2.933 ; 0.000         ;
+; divideClock:div18|q ; 0.498 ; 0.000         ;
+; divideClock:div12|q ; 0.622 ; 0.000         ;
+; divideClock:div1|q  ; 0.644 ; 0.000         ;
+; divideClock:div13|q ; 0.742 ; 0.000         ;
+; divideClock:div16|q ; 0.757 ; 0.000         ;
+; divideClock:div15|q ; 0.761 ; 0.000         ;
+; divideClock:div0|q  ; 0.769 ; 0.000         ;
+; divideClock:div11|q ; 0.790 ; 0.000         ;
+; divideClock:div17|q ; 0.794 ; 0.000         ;
+; divideClock:div19|q ; 0.890 ; 0.000         ;
+; divideClock:div14|q ; 0.904 ; 0.000         ;
+; SLK                 ; 1.277 ; 0.000         ;
+; CS                  ; 1.651 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -300,19 +302,19 @@ No paths to report.
 +---------------------+--------+---------------------+
 ; Clock               ; Slack  ; End Point TNS       ;
 +---------------------+--------+---------------------+
-; SLK                 ; -0.748 ; -26.254             ;
-; CS                  ; -0.720 ; -25.691             ;
-; divideClock:div18|q ; -0.538 ; -0.819              ;
-; divideClock:div12|q ; -0.538 ; -0.809              ;
-; divideClock:div16|q ; -0.538 ; -0.781              ;
-; divideClock:div13|q ; -0.538 ; -0.773              ;
-; divideClock:div19|q ; -0.538 ; -0.773              ;
-; divideClock:div0|q  ; -0.538 ; -0.772              ;
+; SLK                 ; -0.826 ; -24.683             ;
+; CS                  ; -0.693 ; -21.978             ;
+; divideClock:div19|q ; -0.538 ; -7.742              ;
+; divideClock:div14|q ; -0.538 ; -0.809              ;
+; divideClock:div18|q ; -0.538 ; -0.807              ;
+; divideClock:div1|q  ; -0.538 ; -0.784              ;
+; divideClock:div12|q ; -0.538 ; -0.781              ;
+; divideClock:div0|q  ; -0.538 ; -0.775              ;
+; divideClock:div11|q ; -0.538 ; -0.772              ;
+; divideClock:div13|q ; -0.538 ; -0.772              ;
 ; divideClock:div15|q ; -0.538 ; -0.772              ;
-; divideClock:div17|q ; -0.538 ; -0.772              ;
-; divideClock:div11|q ; -0.538 ; -0.771              ;
-; divideClock:div14|q ; -0.538 ; -0.769              ;
-; divideClock:div1|q  ; -0.538 ; -0.769              ;
+; divideClock:div17|q ; -0.538 ; -0.771              ;
+; divideClock:div16|q ; -0.538 ; -0.769              ;
 +---------------------+--------+---------------------+
 
 
@@ -327,41 +329,41 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; SLK                 ; -3.791 ; -57.472       ;
-; divideClock:div19|q ; -2.898 ; -2.898        ;
-; CS                  ; -2.860 ; -42.621       ;
-; divideClock:div12|q ; -1.196 ; -1.196        ;
-; divideClock:div18|q ; -1.064 ; -1.064        ;
-; divideClock:div17|q ; -0.787 ; -0.787        ;
-; divideClock:div14|q ; -0.761 ; -0.761        ;
-; divideClock:div1|q  ; -0.760 ; -0.760        ;
-; divideClock:div0|q  ; -0.751 ; -0.751        ;
-; divideClock:div13|q ; -0.750 ; -0.750        ;
-; divideClock:div11|q ; -0.727 ; -0.727        ;
-; divideClock:div15|q ; -0.715 ; -0.715        ;
-; divideClock:div16|q ; -0.678 ; -0.678        ;
+; SLK                 ; -4.450 ; -58.970       ;
+; CS                  ; -3.368 ; -37.656       ;
+; divideClock:div19|q ; -2.976 ; -14.490       ;
+; divideClock:div1|q  ; -1.150 ; -1.150        ;
+; divideClock:div12|q ; -1.106 ; -1.106        ;
+; divideClock:div18|q ; -1.054 ; -1.054        ;
+; divideClock:div14|q ; -0.984 ; -0.984        ;
+; divideClock:div0|q  ; -0.874 ; -0.874        ;
+; divideClock:div17|q ; -0.797 ; -0.797        ;
+; divideClock:div11|q ; -0.752 ; -0.752        ;
+; divideClock:div15|q ; -0.735 ; -0.735        ;
+; divideClock:div16|q ; -0.731 ; -0.731        ;
+; divideClock:div13|q ; -0.717 ; -0.717        ;
 +---------------------+--------+---------------+
 
 
-+----------------------------------------------+
-; Fast 1100mV 100C Model Hold Summary          ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; divideClock:div16|q ; -0.012 ; -0.012        ;
-; divideClock:div15|q ; 0.078  ; 0.000         ;
-; divideClock:div14|q ; 0.094  ; 0.000         ;
-; divideClock:div1|q  ; 0.094  ; 0.000         ;
-; divideClock:div11|q ; 0.098  ; 0.000         ;
-; divideClock:div0|q  ; 0.109  ; 0.000         ;
-; divideClock:div13|q ; 0.125  ; 0.000         ;
-; divideClock:div17|q ; 0.136  ; 0.000         ;
-; divideClock:div18|q ; 0.259  ; 0.000         ;
-; divideClock:div12|q ; 0.327  ; 0.000         ;
-; CS                  ; 0.552  ; 0.000         ;
-; SLK                 ; 0.612  ; 0.000         ;
-; divideClock:div19|q ; 1.154  ; 0.000         ;
-+---------------------+--------+---------------+
++---------------------------------------------+
+; Fast 1100mV 100C Model Hold Summary         ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; divideClock:div13|q ; 0.055 ; 0.000         ;
+; divideClock:div15|q ; 0.075 ; 0.000         ;
+; divideClock:div16|q ; 0.078 ; 0.000         ;
+; divideClock:div11|q ; 0.088 ; 0.000         ;
+; divideClock:div17|q ; 0.101 ; 0.000         ;
+; divideClock:div14|q ; 0.252 ; 0.000         ;
+; divideClock:div18|q ; 0.267 ; 0.000         ;
+; divideClock:div12|q ; 0.320 ; 0.000         ;
+; divideClock:div0|q  ; 0.332 ; 0.000         ;
+; divideClock:div1|q  ; 0.343 ; 0.000         ;
+; divideClock:div19|q ; 0.361 ; 0.000         ;
+; CS                  ; 0.608 ; 0.000         ;
+; SLK                 ; 0.771 ; 0.000         ;
++---------------------+-------+---------------+
 
 
 -------------------------------------------
@@ -381,19 +383,19 @@ No paths to report.
 +---------------------+--------+---------------------+
 ; Clock               ; Slack  ; End Point TNS       ;
 +---------------------+--------+---------------------+
-; SLK                 ; -0.805 ; -26.301             ;
-; CS                  ; -0.698 ; -20.809             ;
-; divideClock:div18|q ; 0.022  ; 0.000               ;
-; divideClock:div12|q ; 0.027  ; 0.000               ;
-; divideClock:div16|q ; 0.122  ; 0.000               ;
-; divideClock:div11|q ; 0.127  ; 0.000               ;
-; divideClock:div15|q ; 0.127  ; 0.000               ;
-; divideClock:div19|q ; 0.128  ; 0.000               ;
-; divideClock:div13|q ; 0.129  ; 0.000               ;
-; divideClock:div17|q ; 0.130  ; 0.000               ;
-; divideClock:div0|q  ; 0.147  ; 0.000               ;
-; divideClock:div14|q ; 0.161  ; 0.000               ;
-; divideClock:div1|q  ; 0.162  ; 0.000               ;
+; CS                  ; -0.722 ; -19.399             ;
+; SLK                 ; -0.708 ; -19.193             ;
+; divideClock:div14|q ; 0.095  ; 0.000               ;
+; divideClock:div18|q ; 0.101  ; 0.000               ;
+; divideClock:div0|q  ; 0.125  ; 0.000               ;
+; divideClock:div13|q ; 0.130  ; 0.000               ;
+; divideClock:div1|q  ; 0.132  ; 0.000               ;
+; divideClock:div17|q ; 0.144  ; 0.000               ;
+; divideClock:div11|q ; 0.147  ; 0.000               ;
+; divideClock:div15|q ; 0.147  ; 0.000               ;
+; divideClock:div16|q ; 0.147  ; 0.000               ;
+; divideClock:div19|q ; 0.148  ; 0.000               ;
+; divideClock:div12|q ; 0.154  ; 0.000               ;
 +---------------------+--------+---------------------+
 
 
@@ -408,41 +410,41 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; SLK                 ; -3.277 ; -49.249       ;
-; divideClock:div19|q ; -2.743 ; -2.743        ;
-; CS                  ; -2.559 ; -32.580       ;
-; divideClock:div12|q ; -0.973 ; -0.973        ;
-; divideClock:div18|q ; -0.905 ; -0.905        ;
-; divideClock:div17|q ; -0.722 ; -0.722        ;
-; divideClock:div14|q ; -0.699 ; -0.699        ;
-; divideClock:div1|q  ; -0.698 ; -0.698        ;
-; divideClock:div13|q ; -0.696 ; -0.696        ;
-; divideClock:div0|q  ; -0.691 ; -0.691        ;
+; SLK                 ; -3.853 ; -50.700       ;
+; CS                  ; -2.973 ; -29.846       ;
+; divideClock:div19|q ; -2.808 ; -13.139       ;
+; divideClock:div1|q  ; -0.966 ; -0.966        ;
+; divideClock:div12|q ; -0.918 ; -0.918        ;
+; divideClock:div18|q ; -0.884 ; -0.884        ;
+; divideClock:div14|q ; -0.867 ; -0.867        ;
+; divideClock:div0|q  ; -0.762 ; -0.762        ;
+; divideClock:div17|q ; -0.730 ; -0.730        ;
+; divideClock:div11|q ; -0.687 ; -0.687        ;
+; divideClock:div16|q ; -0.682 ; -0.682        ;
 ; divideClock:div15|q ; -0.679 ; -0.679        ;
-; divideClock:div11|q ; -0.678 ; -0.678        ;
-; divideClock:div16|q ; -0.636 ; -0.636        ;
+; divideClock:div13|q ; -0.668 ; -0.668        ;
 +---------------------+--------+---------------+
 
 
-+----------------------------------------------+
-; Fast 1100mV -40C Model Hold Summary          ;
-+---------------------+--------+---------------+
-; Clock               ; Slack  ; End Point TNS ;
-+---------------------+--------+---------------+
-; divideClock:div16|q ; -0.029 ; -0.029        ;
-; divideClock:div15|q ; 0.052  ; 0.000         ;
-; divideClock:div14|q ; 0.063  ; 0.000         ;
-; divideClock:div1|q  ; 0.066  ; 0.000         ;
-; divideClock:div11|q ; 0.075  ; 0.000         ;
-; divideClock:div0|q  ; 0.081  ; 0.000         ;
-; divideClock:div13|q ; 0.094  ; 0.000         ;
-; divideClock:div17|q ; 0.104  ; 0.000         ;
-; divideClock:div18|q ; 0.182  ; 0.000         ;
-; divideClock:div12|q ; 0.192  ; 0.000         ;
-; CS                  ; 0.382  ; 0.000         ;
-; SLK                 ; 0.418  ; 0.000         ;
-; divideClock:div19|q ; 0.976  ; 0.000         ;
-+---------------------+--------+---------------+
++---------------------------------------------+
+; Fast 1100mV -40C Model Hold Summary         ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; divideClock:div13|q ; 0.039 ; 0.000         ;
+; divideClock:div16|q ; 0.045 ; 0.000         ;
+; divideClock:div15|q ; 0.051 ; 0.000         ;
+; divideClock:div11|q ; 0.063 ; 0.000         ;
+; divideClock:div17|q ; 0.065 ; 0.000         ;
+; divideClock:div18|q ; 0.156 ; 0.000         ;
+; divideClock:div14|q ; 0.177 ; 0.000         ;
+; divideClock:div12|q ; 0.211 ; 0.000         ;
+; divideClock:div0|q  ; 0.215 ; 0.000         ;
+; divideClock:div1|q  ; 0.228 ; 0.000         ;
+; divideClock:div19|q ; 0.309 ; 0.000         ;
+; CS                  ; 0.441 ; 0.000         ;
+; SLK                 ; 0.587 ; 0.000         ;
++---------------------+-------+---------------+
 
 
 -------------------------------------------
@@ -462,19 +464,19 @@ No paths to report.
 +---------------------+--------+---------------------+
 ; Clock               ; Slack  ; End Point TNS       ;
 +---------------------+--------+---------------------+
-; SLK                 ; -0.794 ; -26.419             ;
-; CS                  ; -0.759 ; -23.292             ;
-; divideClock:div12|q ; 0.067  ; 0.000               ;
-; divideClock:div18|q ; 0.070  ; 0.000               ;
-; divideClock:div11|q ; 0.130  ; 0.000               ;
-; divideClock:div13|q ; 0.130  ; 0.000               ;
-; divideClock:div15|q ; 0.130  ; 0.000               ;
-; divideClock:div19|q ; 0.130  ; 0.000               ;
-; divideClock:div17|q ; 0.132  ; 0.000               ;
-; divideClock:div16|q ; 0.139  ; 0.000               ;
-; divideClock:div0|q  ; 0.146  ; 0.000               ;
-; divideClock:div14|q ; 0.161  ; 0.000               ;
-; divideClock:div1|q  ; 0.162  ; 0.000               ;
+; SLK                 ; -0.778 ; -22.085             ;
+; CS                  ; -0.760 ; -20.771             ;
+; divideClock:div14|q ; 0.118  ; 0.000               ;
+; divideClock:div18|q ; 0.125  ; 0.000               ;
+; divideClock:div0|q  ; 0.127  ; 0.000               ;
+; divideClock:div13|q ; 0.132  ; 0.000               ;
+; divideClock:div19|q ; 0.144  ; 0.000               ;
+; divideClock:div11|q ; 0.145  ; 0.000               ;
+; divideClock:div17|q ; 0.145  ; 0.000               ;
+; divideClock:div15|q ; 0.146  ; 0.000               ;
+; divideClock:div16|q ; 0.148  ; 0.000               ;
+; divideClock:div1|q  ; 0.149  ; 0.000               ;
+; divideClock:div12|q ; 0.156  ; 0.000               ;
 +---------------------+--------+---------------------+
 
 
@@ -484,40 +486,40 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                 ;
-+----------------------+----------+--------+----------+---------+---------------------+
-; Clock                ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack     ; -5.378   ; -0.029 ; N/A      ; N/A     ; -0.805              ;
-;  CS                  ; -4.987   ; 0.382  ; N/A      ; N/A     ; -0.759              ;
-;  SLK                 ; -5.378   ; 0.418  ; N/A      ; N/A     ; -0.805              ;
-;  divideClock:div0|q  ; -1.846   ; 0.081  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div11|q ; -1.820   ; 0.075  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div12|q ; -1.714   ; 0.192  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div13|q ; -1.863   ; 0.094  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div14|q ; -1.842   ; 0.063  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div15|q ; -1.782   ; 0.052  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div16|q ; -1.735   ; -0.029 ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div17|q ; -1.860   ; 0.104  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div18|q ; -2.123   ; 0.182  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div19|q ; -5.227   ; 0.976  ; N/A      ; N/A     ; -0.538              ;
-;  divideClock:div1|q  ; -1.838   ; 0.066  ; N/A      ; N/A     ; -0.538              ;
-; Design-wide TNS      ; -194.716 ; -0.029 ; 0.0      ; 0.0     ; -60.525             ;
-;  CS                  ; -83.994  ; 0.000  ; N/A      ; N/A     ; -25.691             ;
-;  SLK                 ; -88.606  ; 0.000  ; N/A      ; N/A     ; -26.906             ;
-;  divideClock:div0|q  ; -1.846   ; 0.000  ; N/A      ; N/A     ; -0.772              ;
-;  divideClock:div11|q ; -1.820   ; 0.000  ; N/A      ; N/A     ; -0.771              ;
-;  divideClock:div12|q ; -1.714   ; 0.000  ; N/A      ; N/A     ; -0.823              ;
-;  divideClock:div13|q ; -1.863   ; 0.000  ; N/A      ; N/A     ; -0.773              ;
-;  divideClock:div14|q ; -1.842   ; 0.000  ; N/A      ; N/A     ; -0.773              ;
-;  divideClock:div15|q ; -1.782   ; 0.000  ; N/A      ; N/A     ; -0.772              ;
-;  divideClock:div16|q ; -1.735   ; -0.029 ; N/A      ; N/A     ; -0.794              ;
-;  divideClock:div17|q ; -1.860   ; 0.000  ; N/A      ; N/A     ; -0.772              ;
-;  divideClock:div18|q ; -2.123   ; 0.000  ; N/A      ; N/A     ; -0.831              ;
-;  divideClock:div19|q ; -5.227   ; 0.000  ; N/A      ; N/A     ; -0.773              ;
-;  divideClock:div1|q  ; -1.838   ; 0.000  ; N/A      ; N/A     ; -0.772              ;
-+----------------------+----------+--------+----------+---------+---------------------+
++------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                ;
++----------------------+----------+-------+----------+---------+---------------------+
+; Clock                ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack     ; -6.370   ; 0.039 ; N/A      ; N/A     ; -0.826              ;
+;  CS                  ; -5.287   ; 0.441 ; N/A      ; N/A     ; -0.760              ;
+;  SLK                 ; -6.370   ; 0.587 ; N/A      ; N/A     ; -0.826              ;
+;  divideClock:div0|q  ; -1.653   ; 0.215 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div11|q ; -1.853   ; 0.063 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div12|q ; -1.825   ; 0.211 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div13|q ; -1.810   ; 0.039 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div14|q ; -2.032   ; 0.177 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div15|q ; -1.826   ; 0.051 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div16|q ; -1.840   ; 0.045 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div17|q ; -1.936   ; 0.065 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div18|q ; -1.676   ; 0.156 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div19|q ; -5.189   ; 0.309 ; N/A      ; N/A     ; -0.538              ;
+;  divideClock:div1|q  ; -1.851   ; 0.228 ; N/A      ; N/A     ; -0.538              ;
+; Design-wide TNS      ; -207.525 ; 0.0   ; 0.0      ; 0.0     ; -62.215             ;
+;  CS                  ; -72.550  ; 0.000 ; N/A      ; N/A     ; -21.978             ;
+;  SLK                 ; -88.282  ; 0.000 ; N/A      ; N/A     ; -24.683             ;
+;  divideClock:div0|q  ; -1.653   ; 0.000 ; N/A      ; N/A     ; -0.775              ;
+;  divideClock:div11|q ; -1.853   ; 0.000 ; N/A      ; N/A     ; -0.772              ;
+;  divideClock:div12|q ; -1.825   ; 0.000 ; N/A      ; N/A     ; -0.792              ;
+;  divideClock:div13|q ; -1.810   ; 0.000 ; N/A      ; N/A     ; -0.772              ;
+;  divideClock:div14|q ; -2.032   ; 0.000 ; N/A      ; N/A     ; -0.809              ;
+;  divideClock:div15|q ; -1.826   ; 0.000 ; N/A      ; N/A     ; -0.772              ;
+;  divideClock:div16|q ; -1.840   ; 0.000 ; N/A      ; N/A     ; -0.772              ;
+;  divideClock:div17|q ; -1.936   ; 0.000 ; N/A      ; N/A     ; -0.771              ;
+;  divideClock:div18|q ; -1.676   ; 0.000 ; N/A      ; N/A     ; -0.819              ;
+;  divideClock:div19|q ; -29.368  ; 0.000 ; N/A      ; N/A     ; -7.742              ;
+;  divideClock:div1|q  ; -1.851   ; 0.000 ; N/A      ; N/A     ; -0.794              ;
++----------------------+----------+-------+----------+---------+---------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -641,8 +643,8 @@ No synchronizer chains to report.
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; CS                  ; CS                  ; 16       ; 8        ; 0        ; 12       ;
-; SLK                 ; CS                  ; 24       ; 0        ; 12       ; 0        ;
+; CS                  ; CS                  ; 11       ; 8        ; 0        ; 11       ;
+; SLK                 ; CS                  ; 19       ; 0        ; 11       ; 0        ;
 ; divideClock:div1|q  ; divideClock:div0|q  ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div11|q ; divideClock:div1|q  ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div12|q ; divideClock:div11|q ; 1        ; 1        ; 0        ; 0        ;
@@ -653,11 +655,12 @@ No synchronizer chains to report.
 ; divideClock:div17|q ; divideClock:div16|q ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div18|q ; divideClock:div17|q ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div19|q ; divideClock:div18|q ; 1        ; 1        ; 0        ; 0        ;
-; CS                  ; divideClock:div19|q ; 0        ; 4        ; 0        ; 0        ;
-; SLK                 ; divideClock:div19|q ; 4        ; 0        ; 0        ; 0        ;
-; CS                  ; SLK                 ; 16       ; 20       ; 0        ; 0        ;
+; CS                  ; divideClock:div19|q ; 0        ; 5        ; 0        ; 0        ;
+; divideClock:div19|q ; divideClock:div19|q ; 21       ; 0        ; 0        ; 0        ;
+; SLK                 ; divideClock:div19|q ; 5        ; 0        ; 0        ; 0        ;
+; CS                  ; SLK                 ; 11       ; 19       ; 0        ; 0        ;
 ; divideClock:div0|q  ; SLK                 ; 1        ; 1        ; 0        ; 0        ;
-; SLK                 ; SLK                 ; 36       ; 0        ; 0        ; 0        ;
+; SLK                 ; SLK                 ; 30       ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -667,8 +670,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; CS                  ; CS                  ; 16       ; 8        ; 0        ; 12       ;
-; SLK                 ; CS                  ; 24       ; 0        ; 12       ; 0        ;
+; CS                  ; CS                  ; 11       ; 8        ; 0        ; 11       ;
+; SLK                 ; CS                  ; 19       ; 0        ; 11       ; 0        ;
 ; divideClock:div1|q  ; divideClock:div0|q  ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div11|q ; divideClock:div1|q  ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div12|q ; divideClock:div11|q ; 1        ; 1        ; 0        ; 0        ;
@@ -679,11 +682,12 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; divideClock:div17|q ; divideClock:div16|q ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div18|q ; divideClock:div17|q ; 1        ; 1        ; 0        ; 0        ;
 ; divideClock:div19|q ; divideClock:div18|q ; 1        ; 1        ; 0        ; 0        ;
-; CS                  ; divideClock:div19|q ; 0        ; 4        ; 0        ; 0        ;
-; SLK                 ; divideClock:div19|q ; 4        ; 0        ; 0        ; 0        ;
-; CS                  ; SLK                 ; 16       ; 20       ; 0        ; 0        ;
+; CS                  ; divideClock:div19|q ; 0        ; 5        ; 0        ; 0        ;
+; divideClock:div19|q ; divideClock:div19|q ; 21       ; 0        ; 0        ; 0        ;
+; SLK                 ; divideClock:div19|q ; 5        ; 0        ; 0        ; 0        ;
+; CS                  ; SLK                 ; 11       ; 19       ; 0        ; 0        ;
 ; divideClock:div0|q  ; SLK                 ; 1        ; 1        ; 0        ; 0        ;
-; SLK                 ; SLK                 ; 36       ; 0        ; 0        ; 0        ;
+; SLK                 ; SLK                 ; 30       ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -801,7 +805,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Oct 30 21:37:45 2023
+    Info: Processing started: Mon Oct 30 23:07:43 2023
 Info: Command: quartus_sta SPIlave -c SPIlave
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -830,228 +834,228 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 100C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.378
+Info (332146): Worst-case setup slack is -6.370
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.378             -88.606 SLK 
-    Info (332119):    -5.227              -5.227 divideClock:div19|q 
-    Info (332119):    -4.987             -83.994 CS 
-    Info (332119):    -2.065              -2.065 divideClock:div18|q 
-    Info (332119):    -1.714              -1.714 divideClock:div12|q 
-    Info (332119):    -1.702              -1.702 divideClock:div17|q 
-    Info (332119):    -1.675              -1.675 divideClock:div13|q 
-    Info (332119):    -1.674              -1.674 divideClock:div0|q 
-    Info (332119):    -1.661              -1.661 divideClock:div14|q 
-    Info (332119):    -1.658              -1.658 divideClock:div1|q 
-    Info (332119):    -1.635              -1.635 divideClock:div11|q 
-    Info (332119):    -1.582              -1.582 divideClock:div15|q 
-    Info (332119):    -1.523              -1.523 divideClock:div16|q 
-Info (332146): Worst-case hold slack is 0.405
+    Info (332119):    -6.370             -88.282 SLK 
+    Info (332119):    -5.287             -72.550 CS 
+    Info (332119):    -5.189             -29.368 divideClock:div19|q 
+    Info (332119):    -1.952              -1.952 divideClock:div14|q 
+    Info (332119):    -1.851              -1.851 divideClock:div1|q 
+    Info (332119):    -1.825              -1.825 divideClock:div12|q 
+    Info (332119):    -1.768              -1.768 divideClock:div17|q 
+    Info (332119):    -1.685              -1.685 divideClock:div11|q 
+    Info (332119):    -1.676              -1.676 divideClock:div18|q 
+    Info (332119):    -1.652              -1.652 divideClock:div0|q 
+    Info (332119):    -1.652              -1.652 divideClock:div15|q 
+    Info (332119):    -1.643              -1.643 divideClock:div16|q 
+    Info (332119):    -1.621              -1.621 divideClock:div13|q 
+Info (332146): Worst-case hold slack is 0.494
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.405               0.000 divideClock:div16|q 
-    Info (332119):     0.449               0.000 divideClock:div12|q 
-    Info (332119):     0.550               0.000 divideClock:div15|q 
-    Info (332119):     0.571               0.000 divideClock:div14|q 
-    Info (332119):     0.580               0.000 divideClock:div1|q 
-    Info (332119):     0.621               0.000 divideClock:div11|q 
-    Info (332119):     0.663               0.000 divideClock:div0|q 
-    Info (332119):     0.669               0.000 divideClock:div17|q 
-    Info (332119):     0.680               0.000 divideClock:div13|q 
-    Info (332119):     0.758               0.000 divideClock:div18|q 
-    Info (332119):     1.417               0.000 CS 
-    Info (332119):     1.614               0.000 SLK 
-    Info (332119):     2.998               0.000 divideClock:div19|q 
+    Info (332119):     0.494               0.000 divideClock:div18|q 
+    Info (332119):     0.549               0.000 divideClock:div13|q 
+    Info (332119):     0.579               0.000 divideClock:div16|q 
+    Info (332119):     0.581               0.000 divideClock:div15|q 
+    Info (332119):     0.609               0.000 divideClock:div11|q 
+    Info (332119):     0.626               0.000 divideClock:div12|q 
+    Info (332119):     0.640               0.000 divideClock:div1|q 
+    Info (332119):     0.652               0.000 divideClock:div17|q 
+    Info (332119):     0.735               0.000 divideClock:div0|q 
+    Info (332119):     0.775               0.000 divideClock:div14|q 
+    Info (332119):     0.952               0.000 divideClock:div19|q 
+    Info (332119):     1.422               0.000 SLK 
+    Info (332119):     1.732               0.000 CS 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.794
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.794             -26.906 SLK 
-    Info (332119):    -0.660             -24.866 CS 
-    Info (332119):    -0.538              -0.831 divideClock:div18|q 
-    Info (332119):    -0.538              -0.823 divideClock:div12|q 
-    Info (332119):    -0.538              -0.794 divideClock:div16|q 
-    Info (332119):    -0.538              -0.773 divideClock:div14|q 
-    Info (332119):    -0.538              -0.772 divideClock:div1|q 
-    Info (332119):    -0.538              -0.770 divideClock:div0|q 
-    Info (332119):    -0.538              -0.770 divideClock:div17|q 
-    Info (332119):    -0.538              -0.769 divideClock:div11|q 
-    Info (332119):    -0.538              -0.769 divideClock:div13|q 
-    Info (332119):    -0.538              -0.769 divideClock:div19|q 
-    Info (332119):    -0.538              -0.768 divideClock:div15|q 
+    Info (332119):    -0.794             -23.071 SLK 
+    Info (332119):    -0.687             -21.687 CS 
+    Info (332119):    -0.538              -7.701 divideClock:div19|q 
+    Info (332119):    -0.538              -0.819 divideClock:div18|q 
+    Info (332119):    -0.538              -0.809 divideClock:div14|q 
+    Info (332119):    -0.538              -0.794 divideClock:div1|q 
+    Info (332119):    -0.538              -0.792 divideClock:div12|q 
+    Info (332119):    -0.538              -0.772 divideClock:div16|q 
+    Info (332119):    -0.538              -0.771 divideClock:div11|q 
+    Info (332119):    -0.538              -0.771 divideClock:div17|q 
+    Info (332119):    -0.538              -0.770 divideClock:div13|q 
+    Info (332119):    -0.538              -0.770 divideClock:div15|q 
+    Info (332119):    -0.538              -0.769 divideClock:div0|q 
 Info: Analyzing Slow 1100mV -40C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.162
+Info (332146): Worst-case setup slack is -6.121
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.162              -5.162 divideClock:div19|q 
-    Info (332119):    -5.119             -84.529 SLK 
-    Info (332119):    -4.757             -81.269 CS 
-    Info (332119):    -2.123              -2.123 divideClock:div18|q 
-    Info (332119):    -1.863              -1.863 divideClock:div13|q 
-    Info (332119):    -1.860              -1.860 divideClock:div17|q 
-    Info (332119):    -1.846              -1.846 divideClock:div0|q 
-    Info (332119):    -1.842              -1.842 divideClock:div14|q 
-    Info (332119):    -1.838              -1.838 divideClock:div1|q 
-    Info (332119):    -1.820              -1.820 divideClock:div11|q 
-    Info (332119):    -1.782              -1.782 divideClock:div15|q 
-    Info (332119):    -1.735              -1.735 divideClock:div16|q 
-    Info (332119):    -1.649              -1.649 divideClock:div12|q 
-Info (332146): Worst-case hold slack is 0.438
+    Info (332119):    -6.121             -84.250 SLK 
+    Info (332119):    -5.124             -70.279 CS 
+    Info (332119):    -5.108             -29.251 divideClock:div19|q 
+    Info (332119):    -2.032              -2.032 divideClock:div14|q 
+    Info (332119):    -1.936              -1.936 divideClock:div17|q 
+    Info (332119):    -1.853              -1.853 divideClock:div11|q 
+    Info (332119):    -1.840              -1.840 divideClock:div16|q 
+    Info (332119):    -1.831              -1.831 divideClock:div1|q 
+    Info (332119):    -1.826              -1.826 divideClock:div15|q 
+    Info (332119):    -1.810              -1.810 divideClock:div13|q 
+    Info (332119):    -1.759              -1.759 divideClock:div12|q 
+    Info (332119):    -1.660              -1.660 divideClock:div18|q 
+    Info (332119):    -1.653              -1.653 divideClock:div0|q 
+Info (332146): Worst-case hold slack is 0.498
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.438               0.000 divideClock:div12|q 
-    Info (332119):     0.594               0.000 divideClock:div16|q 
-    Info (332119):     0.723               0.000 divideClock:div15|q 
-    Info (332119):     0.771               0.000 divideClock:div14|q 
-    Info (332119):     0.779               0.000 divideClock:div1|q 
-    Info (332119):     0.831               0.000 divideClock:div11|q 
-    Info (332119):     0.840               0.000 divideClock:div17|q 
-    Info (332119):     0.848               0.000 divideClock:div0|q 
-    Info (332119):     0.868               0.000 divideClock:div18|q 
-    Info (332119):     0.877               0.000 divideClock:div13|q 
-    Info (332119):     1.374               0.000 SLK 
-    Info (332119):     1.389               0.000 CS 
-    Info (332119):     2.933               0.000 divideClock:div19|q 
+    Info (332119):     0.498               0.000 divideClock:div18|q 
+    Info (332119):     0.622               0.000 divideClock:div12|q 
+    Info (332119):     0.644               0.000 divideClock:div1|q 
+    Info (332119):     0.742               0.000 divideClock:div13|q 
+    Info (332119):     0.757               0.000 divideClock:div16|q 
+    Info (332119):     0.761               0.000 divideClock:div15|q 
+    Info (332119):     0.769               0.000 divideClock:div0|q 
+    Info (332119):     0.790               0.000 divideClock:div11|q 
+    Info (332119):     0.794               0.000 divideClock:div17|q 
+    Info (332119):     0.890               0.000 divideClock:div19|q 
+    Info (332119):     0.904               0.000 divideClock:div14|q 
+    Info (332119):     1.277               0.000 SLK 
+    Info (332119):     1.651               0.000 CS 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.748
+Info (332146): Worst-case minimum pulse width slack is -0.826
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.748             -26.254 SLK 
-    Info (332119):    -0.720             -25.691 CS 
-    Info (332119):    -0.538              -0.819 divideClock:div18|q 
-    Info (332119):    -0.538              -0.809 divideClock:div12|q 
-    Info (332119):    -0.538              -0.781 divideClock:div16|q 
-    Info (332119):    -0.538              -0.773 divideClock:div13|q 
-    Info (332119):    -0.538              -0.773 divideClock:div19|q 
-    Info (332119):    -0.538              -0.772 divideClock:div0|q 
+    Info (332119):    -0.826             -24.683 SLK 
+    Info (332119):    -0.693             -21.978 CS 
+    Info (332119):    -0.538              -7.742 divideClock:div19|q 
+    Info (332119):    -0.538              -0.809 divideClock:div14|q 
+    Info (332119):    -0.538              -0.807 divideClock:div18|q 
+    Info (332119):    -0.538              -0.784 divideClock:div1|q 
+    Info (332119):    -0.538              -0.781 divideClock:div12|q 
+    Info (332119):    -0.538              -0.775 divideClock:div0|q 
+    Info (332119):    -0.538              -0.772 divideClock:div11|q 
+    Info (332119):    -0.538              -0.772 divideClock:div13|q 
     Info (332119):    -0.538              -0.772 divideClock:div15|q 
-    Info (332119):    -0.538              -0.772 divideClock:div17|q 
-    Info (332119):    -0.538              -0.771 divideClock:div11|q 
-    Info (332119):    -0.538              -0.769 divideClock:div14|q 
-    Info (332119):    -0.538              -0.769 divideClock:div1|q 
+    Info (332119):    -0.538              -0.771 divideClock:div17|q 
+    Info (332119):    -0.538              -0.769 divideClock:div16|q 
 Info: Analyzing Fast 1100mV 100C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.791
+Info (332146): Worst-case setup slack is -4.450
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.791             -57.472 SLK 
-    Info (332119):    -2.898              -2.898 divideClock:div19|q 
-    Info (332119):    -2.860             -42.621 CS 
-    Info (332119):    -1.196              -1.196 divideClock:div12|q 
-    Info (332119):    -1.064              -1.064 divideClock:div18|q 
-    Info (332119):    -0.787              -0.787 divideClock:div17|q 
-    Info (332119):    -0.761              -0.761 divideClock:div14|q 
-    Info (332119):    -0.760              -0.760 divideClock:div1|q 
-    Info (332119):    -0.751              -0.751 divideClock:div0|q 
-    Info (332119):    -0.750              -0.750 divideClock:div13|q 
-    Info (332119):    -0.727              -0.727 divideClock:div11|q 
-    Info (332119):    -0.715              -0.715 divideClock:div15|q 
-    Info (332119):    -0.678              -0.678 divideClock:div16|q 
-Info (332146): Worst-case hold slack is -0.012
+    Info (332119):    -4.450             -58.970 SLK 
+    Info (332119):    -3.368             -37.656 CS 
+    Info (332119):    -2.976             -14.490 divideClock:div19|q 
+    Info (332119):    -1.150              -1.150 divideClock:div1|q 
+    Info (332119):    -1.106              -1.106 divideClock:div12|q 
+    Info (332119):    -1.054              -1.054 divideClock:div18|q 
+    Info (332119):    -0.984              -0.984 divideClock:div14|q 
+    Info (332119):    -0.874              -0.874 divideClock:div0|q 
+    Info (332119):    -0.797              -0.797 divideClock:div17|q 
+    Info (332119):    -0.752              -0.752 divideClock:div11|q 
+    Info (332119):    -0.735              -0.735 divideClock:div15|q 
+    Info (332119):    -0.731              -0.731 divideClock:div16|q 
+    Info (332119):    -0.717              -0.717 divideClock:div13|q 
+Info (332146): Worst-case hold slack is 0.055
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.012              -0.012 divideClock:div16|q 
-    Info (332119):     0.078               0.000 divideClock:div15|q 
-    Info (332119):     0.094               0.000 divideClock:div14|q 
-    Info (332119):     0.094               0.000 divideClock:div1|q 
-    Info (332119):     0.098               0.000 divideClock:div11|q 
-    Info (332119):     0.109               0.000 divideClock:div0|q 
-    Info (332119):     0.125               0.000 divideClock:div13|q 
-    Info (332119):     0.136               0.000 divideClock:div17|q 
-    Info (332119):     0.259               0.000 divideClock:div18|q 
-    Info (332119):     0.327               0.000 divideClock:div12|q 
-    Info (332119):     0.552               0.000 CS 
-    Info (332119):     0.612               0.000 SLK 
-    Info (332119):     1.154               0.000 divideClock:div19|q 
+    Info (332119):     0.055               0.000 divideClock:div13|q 
+    Info (332119):     0.075               0.000 divideClock:div15|q 
+    Info (332119):     0.078               0.000 divideClock:div16|q 
+    Info (332119):     0.088               0.000 divideClock:div11|q 
+    Info (332119):     0.101               0.000 divideClock:div17|q 
+    Info (332119):     0.252               0.000 divideClock:div14|q 
+    Info (332119):     0.267               0.000 divideClock:div18|q 
+    Info (332119):     0.320               0.000 divideClock:div12|q 
+    Info (332119):     0.332               0.000 divideClock:div0|q 
+    Info (332119):     0.343               0.000 divideClock:div1|q 
+    Info (332119):     0.361               0.000 divideClock:div19|q 
+    Info (332119):     0.608               0.000 CS 
+    Info (332119):     0.771               0.000 SLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.805
+Info (332146): Worst-case minimum pulse width slack is -0.722
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.805             -26.301 SLK 
-    Info (332119):    -0.698             -20.809 CS 
-    Info (332119):     0.022               0.000 divideClock:div18|q 
-    Info (332119):     0.027               0.000 divideClock:div12|q 
-    Info (332119):     0.122               0.000 divideClock:div16|q 
-    Info (332119):     0.127               0.000 divideClock:div11|q 
-    Info (332119):     0.127               0.000 divideClock:div15|q 
-    Info (332119):     0.128               0.000 divideClock:div19|q 
-    Info (332119):     0.129               0.000 divideClock:div13|q 
-    Info (332119):     0.130               0.000 divideClock:div17|q 
-    Info (332119):     0.147               0.000 divideClock:div0|q 
-    Info (332119):     0.161               0.000 divideClock:div14|q 
-    Info (332119):     0.162               0.000 divideClock:div1|q 
+    Info (332119):    -0.722             -19.399 CS 
+    Info (332119):    -0.708             -19.193 SLK 
+    Info (332119):     0.095               0.000 divideClock:div14|q 
+    Info (332119):     0.101               0.000 divideClock:div18|q 
+    Info (332119):     0.125               0.000 divideClock:div0|q 
+    Info (332119):     0.130               0.000 divideClock:div13|q 
+    Info (332119):     0.132               0.000 divideClock:div1|q 
+    Info (332119):     0.144               0.000 divideClock:div17|q 
+    Info (332119):     0.147               0.000 divideClock:div11|q 
+    Info (332119):     0.147               0.000 divideClock:div15|q 
+    Info (332119):     0.147               0.000 divideClock:div16|q 
+    Info (332119):     0.148               0.000 divideClock:div19|q 
+    Info (332119):     0.154               0.000 divideClock:div12|q 
 Info: Analyzing Fast 1100mV -40C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.277
+Info (332146): Worst-case setup slack is -3.853
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.277             -49.249 SLK 
-    Info (332119):    -2.743              -2.743 divideClock:div19|q 
-    Info (332119):    -2.559             -32.580 CS 
-    Info (332119):    -0.973              -0.973 divideClock:div12|q 
-    Info (332119):    -0.905              -0.905 divideClock:div18|q 
-    Info (332119):    -0.722              -0.722 divideClock:div17|q 
-    Info (332119):    -0.699              -0.699 divideClock:div14|q 
-    Info (332119):    -0.698              -0.698 divideClock:div1|q 
-    Info (332119):    -0.696              -0.696 divideClock:div13|q 
-    Info (332119):    -0.691              -0.691 divideClock:div0|q 
+    Info (332119):    -3.853             -50.700 SLK 
+    Info (332119):    -2.973             -29.846 CS 
+    Info (332119):    -2.808             -13.139 divideClock:div19|q 
+    Info (332119):    -0.966              -0.966 divideClock:div1|q 
+    Info (332119):    -0.918              -0.918 divideClock:div12|q 
+    Info (332119):    -0.884              -0.884 divideClock:div18|q 
+    Info (332119):    -0.867              -0.867 divideClock:div14|q 
+    Info (332119):    -0.762              -0.762 divideClock:div0|q 
+    Info (332119):    -0.730              -0.730 divideClock:div17|q 
+    Info (332119):    -0.687              -0.687 divideClock:div11|q 
+    Info (332119):    -0.682              -0.682 divideClock:div16|q 
     Info (332119):    -0.679              -0.679 divideClock:div15|q 
-    Info (332119):    -0.678              -0.678 divideClock:div11|q 
-    Info (332119):    -0.636              -0.636 divideClock:div16|q 
-Info (332146): Worst-case hold slack is -0.029
+    Info (332119):    -0.668              -0.668 divideClock:div13|q 
+Info (332146): Worst-case hold slack is 0.039
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.029              -0.029 divideClock:div16|q 
-    Info (332119):     0.052               0.000 divideClock:div15|q 
-    Info (332119):     0.063               0.000 divideClock:div14|q 
-    Info (332119):     0.066               0.000 divideClock:div1|q 
-    Info (332119):     0.075               0.000 divideClock:div11|q 
-    Info (332119):     0.081               0.000 divideClock:div0|q 
-    Info (332119):     0.094               0.000 divideClock:div13|q 
-    Info (332119):     0.104               0.000 divideClock:div17|q 
-    Info (332119):     0.182               0.000 divideClock:div18|q 
-    Info (332119):     0.192               0.000 divideClock:div12|q 
-    Info (332119):     0.382               0.000 CS 
-    Info (332119):     0.418               0.000 SLK 
-    Info (332119):     0.976               0.000 divideClock:div19|q 
+    Info (332119):     0.039               0.000 divideClock:div13|q 
+    Info (332119):     0.045               0.000 divideClock:div16|q 
+    Info (332119):     0.051               0.000 divideClock:div15|q 
+    Info (332119):     0.063               0.000 divideClock:div11|q 
+    Info (332119):     0.065               0.000 divideClock:div17|q 
+    Info (332119):     0.156               0.000 divideClock:div18|q 
+    Info (332119):     0.177               0.000 divideClock:div14|q 
+    Info (332119):     0.211               0.000 divideClock:div12|q 
+    Info (332119):     0.215               0.000 divideClock:div0|q 
+    Info (332119):     0.228               0.000 divideClock:div1|q 
+    Info (332119):     0.309               0.000 divideClock:div19|q 
+    Info (332119):     0.441               0.000 CS 
+    Info (332119):     0.587               0.000 SLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.794
+Info (332146): Worst-case minimum pulse width slack is -0.778
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.794             -26.419 SLK 
-    Info (332119):    -0.759             -23.292 CS 
-    Info (332119):     0.067               0.000 divideClock:div12|q 
-    Info (332119):     0.070               0.000 divideClock:div18|q 
-    Info (332119):     0.130               0.000 divideClock:div11|q 
-    Info (332119):     0.130               0.000 divideClock:div13|q 
-    Info (332119):     0.130               0.000 divideClock:div15|q 
-    Info (332119):     0.130               0.000 divideClock:div19|q 
-    Info (332119):     0.132               0.000 divideClock:div17|q 
-    Info (332119):     0.139               0.000 divideClock:div16|q 
-    Info (332119):     0.146               0.000 divideClock:div0|q 
-    Info (332119):     0.161               0.000 divideClock:div14|q 
-    Info (332119):     0.162               0.000 divideClock:div1|q 
+    Info (332119):    -0.778             -22.085 SLK 
+    Info (332119):    -0.760             -20.771 CS 
+    Info (332119):     0.118               0.000 divideClock:div14|q 
+    Info (332119):     0.125               0.000 divideClock:div18|q 
+    Info (332119):     0.127               0.000 divideClock:div0|q 
+    Info (332119):     0.132               0.000 divideClock:div13|q 
+    Info (332119):     0.144               0.000 divideClock:div19|q 
+    Info (332119):     0.145               0.000 divideClock:div11|q 
+    Info (332119):     0.145               0.000 divideClock:div17|q 
+    Info (332119):     0.146               0.000 divideClock:div15|q 
+    Info (332119):     0.148               0.000 divideClock:div16|q 
+    Info (332119):     0.149               0.000 divideClock:div1|q 
+    Info (332119):     0.156               0.000 divideClock:div12|q 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5175 megabytes
-    Info: Processing ended: Mon Oct 30 21:37:51 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 5171 megabytes
+    Info: Processing ended: Mon Oct 30 23:07:50 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

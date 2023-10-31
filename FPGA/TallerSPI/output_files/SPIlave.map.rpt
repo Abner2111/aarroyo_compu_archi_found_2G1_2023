@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SPIlave
-Mon Oct 30 21:36:49 2023
+Mon Oct 30 23:06:47 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -14,11 +14,10 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +44,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 30 21:36:49 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 30 23:06:47 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; SPIlave                                        ;
 ; Top-level Entity Name           ; SPIlave                                        ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 24                                             ;
+; Total registers                 ; 32                                             ;
 ; Total pins                      ; 16                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
@@ -188,25 +187,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 16          ;
+; Estimate of Logic utilization (ALMs needed) ; 20          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 26          ;
+; Combinational ALUT usage for logic          ; 33          ;
 ;     -- 7 input functions                    ; 2           ;
 ;     -- 6 input functions                    ; 0           ;
-;     -- 5 input functions                    ; 0           ;
-;     -- 4 input functions                    ; 8           ;
-;     -- <=3 input functions                  ; 16          ;
+;     -- 5 input functions                    ; 1           ;
+;     -- 4 input functions                    ; 9           ;
+;     -- <=3 input functions                  ; 21          ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 24          ;
+; Dedicated logic registers                   ; 32          ;
 ;                                             ;             ;
 ; I/O pins                                    ; 16          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; LED[0]~reg0 ;
-; Maximum fan-out                             ; 11          ;
-; Total fan-out                               ; 144         ;
-; Average fan-out                             ; 1.76        ;
+; Maximum fan-out node                        ; LED[2]~reg0 ;
+; Maximum fan-out                             ; 12          ;
+; Total fan-out                               ; 178         ;
+; Average fan-out                             ; 1.84        ;
 +---------------------------------------------+-------------+
 
 
@@ -215,9 +214,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+---------------+--------------+
-; |SPIlave                   ; 26 (1)              ; 24 (8)                    ; 0                 ; 0          ; 16   ; 0            ; |SPIlave                   ; SPIlave       ; work         ;
-;    |BCD_module:bdc1|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|BCD_module:bdc1   ; BCD_module    ; work         ;
-;    |PWM_module:pwm1|       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|PWM_module:pwm1   ; PWM_module    ; work         ;
+; |SPIlave                   ; 33 (1)              ; 32 (8)                    ; 0                 ; 0          ; 16   ; 0            ; |SPIlave                   ; SPIlave       ; work         ;
+;    |BCD_module:bdc1|       ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|BCD_module:bdc1   ; BCD_module    ; work         ;
+;    |PWM_module:pwm1|       ; 7 (7)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|PWM_module:pwm1   ; PWM_module    ; work         ;
 ;    |WriteToMaster:wtm|     ; 6 (6)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|WriteToMaster:wtm ; WriteToMaster ; work         ;
 ;    |divideClock:div0|      ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|divideClock:div0  ; divideClock   ; work         ;
 ;    |divideClock:div11|     ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |SPIlave|divideClock:div11 ; divideClock   ; work         ;
@@ -234,38 +233,17 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; PWM_module:pwm1|counter[1..3]          ; Stuck at GND due to stuck port data_in ;
-; PWM_module:pwm1|comparison[1]          ; Stuck at GND due to stuck port data_in ;
-; PWM_module:pwm1|comparison[2]          ; Stuck at VCC due to stuck port data_in ;
-; PWM_module:pwm1|comparison[3]          ; Stuck at GND due to stuck port data_in ;
-; PWM_module:pwm1|comparison[0]          ; Lost fanout                            ;
-; PWM_module:pwm1|completed              ; Stuck at GND due to stuck port data_in ;
-; PWM_module:pwm1|counter[0]             ; Stuck at GND due to stuck port data_in ;
-; bit1                                   ; Merged with LED[0]~reg0                ;
-; bit2                                   ; Merged with LED[1]~reg0                ;
-; bit3                                   ; Merged with LED[2]~reg0                ;
-; bit4                                   ; Merged with LED[3]~reg0                ;
-; Total Number of Removed Registers = 13 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                            ;
-+----------------------------+---------------------------+---------------------------------------------------------------+
-; Register name              ; Reason for Removal        ; Registers Removed due to This Register                        ;
-+----------------------------+---------------------------+---------------------------------------------------------------+
-; PWM_module:pwm1|counter[1] ; Stuck at GND              ; PWM_module:pwm1|comparison[1], PWM_module:pwm1|comparison[0], ;
-;                            ; due to stuck port data_in ; PWM_module:pwm1|completed, PWM_module:pwm1|counter[0]         ;
-; PWM_module:pwm1|counter[2] ; Stuck at GND              ; PWM_module:pwm1|comparison[2]                                 ;
-;                            ; due to stuck port data_in ;                                                               ;
-; PWM_module:pwm1|counter[3] ; Stuck at GND              ; PWM_module:pwm1|comparison[3]                                 ;
-;                            ; due to stuck port data_in ;                                                               ;
-+----------------------------+---------------------------+---------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Registers Removed During Synthesis                              ;
++---------------------------------------+-------------------------+
+; Register name                         ; Reason for Removal      ;
++---------------------------------------+-------------------------+
+; bit1                                  ; Merged with LED[0]~reg0 ;
+; bit2                                  ; Merged with LED[1]~reg0 ;
+; bit3                                  ; Merged with LED[2]~reg0 ;
+; bit4                                  ; Merged with LED[3]~reg0 ;
+; Total Number of Removed Registers = 4 ;                         ;
++---------------------------------------+-------------------------+
 
 
 +------------------------------------------------------+
@@ -273,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -288,16 +266,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 24                          ;
-;     plain             ; 24                          ;
-; arriav_lcell_comb     ; 32                          ;
+; arriav_ff             ; 32                          ;
+;     plain             ; 32                          ;
+; arriav_lcell_comb     ; 39                          ;
 ;     extend            ; 2                           ;
 ;         7 data inputs ; 2                           ;
-;     normal            ; 30                          ;
-;         1 data inputs ; 18                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
+;     normal            ; 37                          ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 1                           ;
 ; boundary_port         ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
@@ -320,7 +299,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Oct 30 21:36:38 2023
+    Info: Processing started: Mon Oct 30 23:06:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SPIlave -c SPIlave
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -337,22 +316,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file writeto
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/divideclock.v
     Info (12023): Found entity 1: divideClock File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/output_files/divideClock.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file output_files/spilave.v
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/pwm_tb.v
+    Info (12023): Found entity 1: PWM_tb File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/output_files/PWM_tb.v Line: 1
 Info (12127): Elaborating entity "SPIlave" for the top level hierarchy
 Info (12128): Elaborating entity "divideClock" for hierarchy "divideClock:div0" File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/SPIlave.v Line: 25
 Info (12128): Elaborating entity "PWM_module" for hierarchy "PWM_module:pwm1" File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/SPIlave.v Line: 49
 Info (12128): Elaborating entity "BCD_module" for hierarchy "BCD_module:bdc1" File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/SPIlave.v Line: 51
 Info (12128): Elaborating entity "WriteToMaster" for hierarchy "WriteToMaster:wtm" File: D:/Desktop/FunArqui/aarroyo_compu_archi_found_2G1_2023/FPGA/TallerSPI/SPIlave.v Line: 53
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 34 logic cells
+    Info (21061): Implemented 43 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Mon Oct 30 21:36:49 2023
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Mon Oct 30 23:06:47 2023
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:21
 

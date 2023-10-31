@@ -2,9 +2,9 @@ module PWM_tb();
 
 	reg [3:0] Porcentaje;
 	reg SLK;
-	reg pwm;
+	wire pwm;
 	
-	PWM_module #(.Porcentaje(Porcentaje), .SLK(SLK), .pwm(pwm));
+	PWM_module test(.Porcentaje(Porcentaje), .SLK(SLK), .pwm(pwm));
 	
 	initial begin
 	
@@ -22,7 +22,7 @@ module PWM_tb();
 		#10
 		Porcentaje = 8;
 		#10
-		Porcentje = 10;
+		Porcentaje = 10;
 		#10;
 	
 	end
