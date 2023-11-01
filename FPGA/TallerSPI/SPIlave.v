@@ -46,7 +46,7 @@ divideClock div19(.clk(clk[18]), .d(din[19]), .q(clk[19]));
 
 
 
-PWM_module pwm1(.Porcentaje(LED), .SLK(clk[19]), .pwm(Velocidad));
+PWM_module pwm1(.Porcentaje(LED), .SLK(clk[2]), .pwm(Velocidad));
 
 BCD_module bdc1(.A(LED[3]), .B(LED[2]), .C(LED[1]), .D(LED[0]), .display(display));
 

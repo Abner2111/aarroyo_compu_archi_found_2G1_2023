@@ -65,7 +65,7 @@ set_location_assignment PIN_AA24 -to LED[1]
 set_location_assignment PIN_W15 -to LED[0]
 set_global_assignment -name VERILOG_FILE PWM_module.v
 set_global_assignment -name VERILOG_FILE BCD_module.v
-set_location_assignment PIN_AF4 -to Velocidad
+set_location_assignment PIN_AA11 -to Velocidad
 set_global_assignment -name VERILOG_FILE WriteToMaster.v
 set_location_assignment PIN_AB23 -to display[0]
 set_location_assignment PIN_AC22 -to display[1]

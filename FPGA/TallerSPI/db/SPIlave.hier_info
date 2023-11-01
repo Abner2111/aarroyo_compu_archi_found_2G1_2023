@@ -2,19 +2,19 @@
 SLK => SLK.IN2
 MOSI => bit0.DATAIN
 CS => CS.IN1
-MISO << WriteToMaster:wtm.MISO
-LED[0] << LED[0].DB_MAX_OUTPUT_PORT_TYPE
-LED[1] << LED[1].DB_MAX_OUTPUT_PORT_TYPE
-LED[2] << LED[2].DB_MAX_OUTPUT_PORT_TYPE
-LED[3] << LED[3].DB_MAX_OUTPUT_PORT_TYPE
-display[0] << BCD_module:bdc1.display
-display[1] << BCD_module:bdc1.display
-display[2] << BCD_module:bdc1.display
-display[3] << BCD_module:bdc1.display
-display[4] << BCD_module:bdc1.display
-display[5] << BCD_module:bdc1.display
-display[6] << BCD_module:bdc1.display
-Velocidad << PWM_module:pwm1.pwm
+MISO <= WriteToMaster:wtm.MISO
+LED[0] <= LED[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= LED[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= LED[3].DB_MAX_OUTPUT_PORT_TYPE
+display[0] <= BCD_module:bdc1.display
+display[1] <= BCD_module:bdc1.display
+display[2] <= BCD_module:bdc1.display
+display[3] <= BCD_module:bdc1.display
+display[4] <= BCD_module:bdc1.display
+display[5] <= BCD_module:bdc1.display
+display[6] <= BCD_module:bdc1.display
+Velocidad <= PWM_module:pwm1.pwm
 
 
 |SPIlave|divideClock:div0
@@ -140,8 +140,8 @@ q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |SPIlave|PWM_module:pwm1
 Porcentaje[0] => mappedInput[0].DATAIN
 Porcentaje[1] => mappedInput[1].DATAIN
-Porcentaje[2] => Add0.IN4
-Porcentaje[3] => Add0.IN3
+Porcentaje[2] => mappedInput[2].DATAIN
+Porcentaje[3] => mappedInput[3].DATAIN
 SLK => counter[0].CLK
 SLK => counter[1].CLK
 SLK => counter[2].CLK

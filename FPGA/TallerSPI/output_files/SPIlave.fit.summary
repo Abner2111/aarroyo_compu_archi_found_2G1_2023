@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Oct 30 23:07:33 2023
+Fitter Status : Successful - Tue Oct 31 01:55:08 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : SPIlave
 Top-level Entity Name : SPIlave
 Family : Cyclone V
 Device : 5CSEBA6U23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 18 / 41,910 ( < 1 % )
-Total registers : 37
+Logic utilization (in ALMs) : 13 / 41,910 ( < 1 % )
+Total registers : 31
 Total pins : 16 / 314 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )

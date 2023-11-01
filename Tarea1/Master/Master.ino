@@ -13,7 +13,7 @@ void setup() {
   pinMode(slaveSelectPin, OUTPUT);
   // Initialize SPI:
   SPI.begin();
-  handshakeDone = true;
+  handshakeDone = false;
   timeStamp = millis();
   Serial.begin(9600);
 }
@@ -70,7 +70,7 @@ void loop() {
     }
 
     if  ((millis()-timeStamp)>=3000){
-      handshakeDone = true; //response took longer than 3 seconds
+      handshakeDone = false; //response took longer than 3 seconds
       Serial.println("No response");
     }
   }
