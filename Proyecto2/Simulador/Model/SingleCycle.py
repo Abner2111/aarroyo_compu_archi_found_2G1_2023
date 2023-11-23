@@ -76,7 +76,12 @@ class SingleCycle(Processor):
         elif opNem == "addi":
             self.addi(operation[1],operation[2],operation[3])
         elif opNem == "beq":
-            self.beq(operation[1],operation[2],operation[3])
-        
+            addr = self.labels[operation[3]]
+            self.beq(operation[1],operation[2],addr)
+        elif opNem == "j":
+            addr = self.labels[operation[3]]
+            self.j(addr)
+        elif opNem == "mul":
+            self.mul(operation[1],operation[2],operation[3])
 
         print(opNem)
