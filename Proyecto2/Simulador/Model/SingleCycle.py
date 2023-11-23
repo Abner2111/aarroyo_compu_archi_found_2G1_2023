@@ -1,5 +1,5 @@
 import time 
-from Processor import Processor
+from Model.Processor import Processor
 
 class SingleCycle(Processor):
     def __init__(self, cycleTime):
@@ -120,58 +120,12 @@ class SingleCycle(Processor):
             self.pc+=1
             print(self.pc)
             print(self.registerFile)
-singleCycleProc = SingleCycle(0.005)
+""" singleCycleProc = SingleCycle(0.005)
 
-singleCycleProc.memory[0] = "li, s4, 30"
-singleCycleProc.memory[1] = "li, a3, 2"
-singleCycleProc.memory[2] = "li, a4, 49"
-singleCycleProc.memory[3] = "li, s5, 6"
-singleCycleProc.memory[4] = "li, s7, 1"
-singleCycleProc.memory[5] = ""
-singleCycleProc.memory[6] = "#fill the initial array [0,sieveSize-1]"
-singleCycleProc.memory[7] = "li, t0, 0"
-singleCycleProc.memory[8] = "add, t1, t1, zero"
-singleCycleProc.memory[9] = "add, t1, t1, a4"
-singleCycleProc.memory[10] = "add, t0,t0,zero"
-singleCycleProc.memory[11] = "add, t0, t0, a3"
-singleCycleProc.memory[12] = "addi, s4, s4, 1"
-singleCycleProc.memory[13] = ""
-singleCycleProc.memory[14] = "fill:"
-singleCycleProc.memory[15] = "sw, t0, 0,t1"
-singleCycleProc.memory[16] = "addi, t1, t1, 1"
-singleCycleProc.memory[17] = "addi, t0, t0, 1"
-singleCycleProc.memory[18] = "beq, t0, s4, eliminate"
-singleCycleProc.memory[19] = "j, fill"
-singleCycleProc.memory[20] = ""
-singleCycleProc.memory[21] = ""
-singleCycleProc.memory[22] = "eliminate:"
-singleCycleProc.memory[23] = "addi, t3, a4, -1"
-singleCycleProc.memory[24] = "add, s1, zero, zero"
-singleCycleProc.memory[25] = "nextPrime:"
-singleCycleProc.memory[26] = "addi, s1, s1, 1"
-singleCycleProc.memory[27] = "addi, t3,t3,1"
-singleCycleProc.memory[28] = "lw, t5, 0,t3"
-singleCycleProc.memory[29] = ""
-singleCycleProc.memory[30] = "#calcula el tamano del salto"
-singleCycleProc.memory[31] = "mul, s6, t5, s7"
-singleCycleProc.memory[32] = "add, t6, zero, t3"
-singleCycleProc.memory[33] = "beq, t5, zero, nextPrime"
-singleCycleProc.memory[34] = "bge, s1, s5, end"
-singleCycleProc.memory[35] = "add, s11, zero, zero"
-singleCycleProc.memory[36] = ""
-singleCycleProc.memory[37] = "#loop with step size lesser than sqrt of N"
-singleCycleProc.memory[38] = "#makes zero what arrives in the step "
-singleCycleProc.memory[39] = "loopSieve:"
-singleCycleProc.memory[40] = "addi, s11, s11, 1"
-singleCycleProc.memory[41] = "add, t6, t6, s6"
-singleCycleProc.memory[42] = "sw, zero, 0,t6"
-singleCycleProc.memory[43] = "bge, s11, s4, nextPrime"
-singleCycleProc.memory[44] = "j, loopSieve"
-singleCycleProc.memory[45] = "end:"
-singleCycleProc.memory[46] = "call, 10"
+
 
 
 singleCycleProc.runAll()
 
 
-print(singleCycleProc.memory)
+print(singleCycleProc.memory) """
