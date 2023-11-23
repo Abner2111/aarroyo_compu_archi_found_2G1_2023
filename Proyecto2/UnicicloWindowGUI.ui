@@ -63,252 +63,6 @@
      <string>pcLabel</string>
     </property>
    </widget>
-   <widget class="QWidget" name="formLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>80</y>
-      <width>116</width>
-      <height>311</height>
-     </rect>
-    </property>
-    <layout class="QFormLayout" name="memoriaLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="addrLabel">
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>addr</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="valueMemoriaLabel">
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Value</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="addrLabel2">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="valueLabel2">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="addrLabel3">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="valueLabel3">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="addrLabel4">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="valueLabel4">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="addrLabel5">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="addrLabel6">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="addrLabel7">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="addrLabel8">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="addrLabel9">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="valueLabel5">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="valueLabel6">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="valueLabel7">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLabel" name="valueLabel8">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLabel" name="valueLabel9">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QLabel" name="memoriaMainLabel">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>50</y>
-      <width>61</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Memoria</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="pcNumberLabel">
     <property name="geometry">
      <rect>
@@ -340,8 +94,8 @@
    <widget class="QLabel" name="registroMainLabel">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>200</y>
+      <x>350</x>
+      <y>40</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -358,8 +112,8 @@
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>230</y>
+      <x>310</x>
+      <y>70</y>
       <width>161</width>
       <height>331</height>
      </rect>
@@ -371,14 +125,14 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-347</y>
+       <y>0</y>
        <width>142</width>
-       <height>676</height>
+       <height>476</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
-       <widget class="QLabel" name="rxMainLabel">
+       <widget class="QLabel" name="rxMainLabel_2">
         <property name="font">
          <font>
           <pointsize>11</pointsize>
@@ -396,7 +150,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLabel" name="valueRegistrosMainLabel">
+       <widget class="QLabel" name="valueRegistrosLabel_2">
         <property name="font">
          <font>
           <pointsize>11</pointsize>
@@ -408,7 +162,7 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QLabel" name="rxLabel2">
+       <widget class="QLabel" name="rxLabel2_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -420,7 +174,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLabel" name="valueMemLabel">
+       <widget class="QLabel" name="valueMemLabel2_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -432,7 +186,7 @@
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="rxLabel3">
+       <widget class="QLabel" name="rxLabel3_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -444,7 +198,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLabel" name="valueMemLabel_2">
+       <widget class="QLabel" name="valueMemLabel3_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -456,7 +210,7 @@
        </widget>
       </item>
       <item row="3" column="0">
-       <widget class="QLabel" name="rxLabel4">
+       <widget class="QLabel" name="rxLabel4_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -468,7 +222,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLabel" name="valueMemLabel_3">
+       <widget class="QLabel" name="valueMemLabel4_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -480,7 +234,7 @@
        </widget>
       </item>
       <item row="4" column="0">
-       <widget class="QLabel" name="rxLabel5">
+       <widget class="QLabel" name="rxLabel2_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -492,7 +246,7 @@
        </widget>
       </item>
       <item row="4" column="1">
-       <widget class="QLabel" name="valueMemLabel_4">
+       <widget class="QLabel" name="valueMemLabel6_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -504,7 +258,7 @@
        </widget>
       </item>
       <item row="5" column="0">
-       <widget class="QLabel" name="rxLabel6">
+       <widget class="QLabel" name="valueMemLabel2_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -516,7 +270,7 @@
        </widget>
       </item>
       <item row="5" column="1">
-       <widget class="QLabel" name="valueMemLabel_5">
+       <widget class="QLabel" name="rxLabel2_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -528,7 +282,7 @@
        </widget>
       </item>
       <item row="10" column="1">
-       <widget class="QLabel" name="valueMemLabel_10">
+       <widget class="QLabel" name="valueMemLabel4_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -540,7 +294,7 @@
        </widget>
       </item>
       <item row="9" column="1">
-       <widget class="QLabel" name="valueMemLabel_9">
+       <widget class="QLabel" name="valueMemLabel6_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -552,7 +306,7 @@
        </widget>
       </item>
       <item row="8" column="1">
-       <widget class="QLabel" name="valueMemLabel_8">
+       <widget class="QLabel" name="rxLabel2_7">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -564,7 +318,7 @@
        </widget>
       </item>
       <item row="7" column="1">
-       <widget class="QLabel" name="valueMemLabel_7">
+       <widget class="QLabel" name="valueMemLabel3_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -576,7 +330,7 @@
        </widget>
       </item>
       <item row="6" column="1">
-       <widget class="QLabel" name="valueMemLabel_6">
+       <widget class="QLabel" name="valueMemLabel2_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -588,7 +342,7 @@
        </widget>
       </item>
       <item row="6" column="0">
-       <widget class="QLabel" name="rxLabel7">
+       <widget class="QLabel" name="rxLabel2_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -600,7 +354,7 @@
        </widget>
       </item>
       <item row="7" column="0">
-       <widget class="QLabel" name="rxLabel8">
+       <widget class="QLabel" name="valueMemLabel4_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -612,7 +366,7 @@
        </widget>
       </item>
       <item row="8" column="0">
-       <widget class="QLabel" name="rxLabel9">
+       <widget class="QLabel" name="valueMemLabel3_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -624,7 +378,7 @@
        </widget>
       </item>
       <item row="9" column="0">
-       <widget class="QLabel" name="rxLabel10">
+       <widget class="QLabel" name="valueMemLabel6_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -636,7 +390,7 @@
        </widget>
       </item>
       <item row="10" column="0">
-       <widget class="QLabel" name="rxLabel11">
+       <widget class="QLabel" name="rxLabel2_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -648,7 +402,7 @@
        </widget>
       </item>
       <item row="11" column="0">
-       <widget class="QLabel" name="rxLabel12">
+       <widget class="QLabel" name="rxLabel4_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -660,7 +414,7 @@
        </widget>
       </item>
       <item row="11" column="1">
-       <widget class="QLabel" name="valueMemLabel_11">
+       <widget class="QLabel" name="rxLabel3_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -672,7 +426,7 @@
        </widget>
       </item>
       <item row="12" column="0">
-       <widget class="QLabel" name="rxLabel13">
+       <widget class="QLabel" name="rxLabel2_8">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -684,7 +438,7 @@
        </widget>
       </item>
       <item row="12" column="1">
-       <widget class="QLabel" name="valueMemLabel_12">
+       <widget class="QLabel" name="rxLabel2_9">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -696,7 +450,7 @@
        </widget>
       </item>
       <item row="22" column="1">
-       <widget class="QLabel" name="valueMemLabel_22">
+       <widget class="QLabel" name="valueMemLabel6_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -708,7 +462,7 @@
        </widget>
       </item>
       <item row="21" column="1">
-       <widget class="QLabel" name="valueMemLabel_21">
+       <widget class="QLabel" name="valueMemLabel3_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -720,7 +474,7 @@
        </widget>
       </item>
       <item row="20" column="1">
-       <widget class="QLabel" name="valueMemLabel_20">
+       <widget class="QLabel" name="rxLabel3_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -732,7 +486,7 @@
        </widget>
       </item>
       <item row="19" column="1">
-       <widget class="QLabel" name="valueMemLabel_19">
+       <widget class="QLabel" name="rxLabel2_17">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -744,7 +498,7 @@
        </widget>
       </item>
       <item row="18" column="1">
-       <widget class="QLabel" name="valueMemLabel_18">
+       <widget class="QLabel" name="valueMemLabel4_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -756,7 +510,7 @@
        </widget>
       </item>
       <item row="17" column="1">
-       <widget class="QLabel" name="valueMemLabel_17">
+       <widget class="QLabel" name="rxLabel2_16">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -768,7 +522,7 @@
        </widget>
       </item>
       <item row="16" column="1">
-       <widget class="QLabel" name="valueMemLabel_16">
+       <widget class="QLabel" name="rxLabel2_14">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -780,7 +534,7 @@
        </widget>
       </item>
       <item row="15" column="1">
-       <widget class="QLabel" name="valueMemLabel_15">
+       <widget class="QLabel" name="valueMemLabel2_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -792,7 +546,7 @@
        </widget>
       </item>
       <item row="14" column="1">
-       <widget class="QLabel" name="valueMemLabel_14">
+       <widget class="QLabel" name="rxLabel4_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -804,7 +558,7 @@
        </widget>
       </item>
       <item row="13" column="1">
-       <widget class="QLabel" name="valueMemLabel_13">
+       <widget class="QLabel" name="rxLabel2_15">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -816,7 +570,7 @@
        </widget>
       </item>
       <item row="13" column="0">
-       <widget class="QLabel" name="rxLabel14">
+       <widget class="QLabel" name="valueMemLabel6_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -828,7 +582,7 @@
        </widget>
       </item>
       <item row="14" column="0">
-       <widget class="QLabel" name="rxLabel15">
+       <widget class="QLabel" name="rxLabel4_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -840,7 +594,7 @@
        </widget>
       </item>
       <item row="15" column="0">
-       <widget class="QLabel" name="rxLabel16">
+       <widget class="QLabel" name="valueMemLabel3_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -852,7 +606,7 @@
        </widget>
       </item>
       <item row="16" column="0">
-       <widget class="QLabel" name="rxLabel17">
+       <widget class="QLabel" name="rxLabel2_11">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -864,7 +618,7 @@
        </widget>
       </item>
       <item row="17" column="0">
-       <widget class="QLabel" name="rxLabel18">
+       <widget class="QLabel" name="rxLabel2_10">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -876,7 +630,7 @@
        </widget>
       </item>
       <item row="18" column="0">
-       <widget class="QLabel" name="rxLabel19">
+       <widget class="QLabel" name="rxLabel2_13">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -888,7 +642,7 @@
        </widget>
       </item>
       <item row="19" column="0">
-       <widget class="QLabel" name="rxLabel20">
+       <widget class="QLabel" name="rxLabel2_12">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -900,7 +654,7 @@
        </widget>
       </item>
       <item row="20" column="0">
-       <widget class="QLabel" name="rxLabel21">
+       <widget class="QLabel" name="rxLabel3_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -912,7 +666,7 @@
        </widget>
       </item>
       <item row="21" column="0">
-       <widget class="QLabel" name="rxLabel22">
+       <widget class="QLabel" name="valueMemLabel4_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -924,7 +678,7 @@
        </widget>
       </item>
       <item row="22" column="0">
-       <widget class="QLabel" name="rxLabel23">
+       <widget class="QLabel" name="valueMemLabel2_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -935,8 +689,585 @@
         </property>
        </widget>
       </item>
-      <item row="23" column="0">
-       <widget class="QLabel" name="rxLabel24">
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="registroMainLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>40</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Memoria</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>70</y>
+      <width>161</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>142</width>
+       <height>1636</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="rxMainLabel_3">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>addr</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="valueRegistrosLabel_3">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="addrLabel">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="valueLabel">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="addrLabel_2">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="valueLabel_2">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="addrLabel_3">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="valueLabel_3">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="addrLabel_4">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="valueLabel_4">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="addrLabel_5">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="valueLabel_5">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="addrLabel_6">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="valueLabel_6">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="addrLabel_7">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="valueLabel_7">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="addrLabel_8">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="valueLabel_8">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="addrLabel_9">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="valueLabel_9">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="addrLabel_10">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="valueLabel_10">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="addrLabel_16">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="valueLabel_11">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="addrLabel_18">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLabel" name="valueLabel_12">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="addrLabel_14">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QLabel" name="valueLabel_13">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="addrLabel_12">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QLabel" name="valueLabel_14">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="addrLabel_11">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QLabel" name="valueLabel_15">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="addrLabel_15">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QLabel" name="valueLabel_16">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="addrLabel_17">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QLabel" name="valueLabel_17">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="addrLabel_13">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QLabel" name="valueLabel_18">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="addrLabel_19">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1">
+       <widget class="QLabel" name="valueLabel_19">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="0">
+       <widget class="QLabel" name="addrLabel_20">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1">
+       <widget class="QLabel" name="valueLabel_20">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QLabel" name="addrLabel_21">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1">
+       <widget class="QLabel" name="valueLabel_21">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="1">
+       <widget class="QLabel" name="valueLabel_22">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -948,163 +1279,7 @@
        </widget>
       </item>
       <item row="23" column="1">
-       <widget class="QLabel" name="valueMemLabel_23">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="24" column="0">
-       <widget class="QLabel" name="rxLabel25">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="29" column="0">
-       <widget class="QLabel" name="rxLabel30">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="28" column="0">
-       <widget class="QLabel" name="rxLabel29">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="27" column="0">
-       <widget class="QLabel" name="rxLabel28">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="26" column="0">
-       <widget class="QLabel" name="rxLabel27">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="25" column="0">
-       <widget class="QLabel" name="rxLabel26">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="24" column="1">
-       <widget class="QLabel" name="valueMemLabel_24">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="25" column="1">
-       <widget class="QLabel" name="valueMemLabel_25">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="26" column="1">
-       <widget class="QLabel" name="valueMemLabel_26">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="27" column="1">
-       <widget class="QLabel" name="valueMemLabel_27">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="28" column="1">
-       <widget class="QLabel" name="valueMemLabel_28">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="29" column="1">
-       <widget class="QLabel" name="valueMemLabel_29">
-        <property name="font">
-         <font>
-          <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="30" column="1">
-       <widget class="QLabel" name="valueMemLabel_30">
+       <widget class="QLabel" name="valueLabel_23">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -1116,7 +1291,187 @@
        </widget>
       </item>
       <item row="31" column="1">
-       <widget class="QLabel" name="valueMemLabel_31">
+       <widget class="QLabel" name="valueLabel_31">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="30" column="1">
+       <widget class="QLabel" name="valueLabel_28">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="29" column="1">
+       <widget class="QLabel" name="valueLabel_26">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="28" column="1">
+       <widget class="QLabel" name="valueLabel_24">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="27" column="1">
+       <widget class="QLabel" name="valueLabel_27">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="1">
+       <widget class="QLabel" name="valueLabel_30">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="1">
+       <widget class="QLabel" name="valueLabel_25">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="1">
+       <widget class="QLabel" name="valueLabel_29">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="0">
+       <widget class="QLabel" name="addrLabel_22">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0">
+       <widget class="QLabel" name="addrLabel_23">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0">
+       <widget class="QLabel" name="addrLabel_24">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="0">
+       <widget class="QLabel" name="addrLabel_25">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="0">
+       <widget class="QLabel" name="addrLabel_26">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="27" column="0">
+       <widget class="QLabel" name="addrLabel_27">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="28" column="0">
+       <widget class="QLabel" name="addrLabel_28">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="29" column="0">
+       <widget class="QLabel" name="addrLabel_29">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -1128,7 +1483,7 @@
        </widget>
       </item>
       <item row="30" column="0">
-       <widget class="QLabel" name="rxLabel31">
+       <widget class="QLabel" name="addrLabel_30">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -1140,7 +1495,7 @@
        </widget>
       </item>
       <item row="31" column="0">
-       <widget class="QLabel" name="rxLabel32">
+       <widget class="QLabel" name="addrLabel_31">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -1152,7 +1507,103 @@
        </widget>
       </item>
       <item row="32" column="0">
-       <widget class="QLabel" name="rxLabel33">
+       <widget class="QLabel" name="addrLabel_32">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="33" column="0">
+       <widget class="QLabel" name="addrLabel_33">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="34" column="0">
+       <widget class="QLabel" name="addrLabel_34">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="35" column="0">
+       <widget class="QLabel" name="addrLabel_35">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="36" column="0">
+       <widget class="QLabel" name="addrLabel_36">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="37" column="0">
+       <widget class="QLabel" name="addrLabel_37">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="38" column="0">
+       <widget class="QLabel" name="addrLabel_38">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="39" column="0">
+       <widget class="QLabel" name="addrLabel_39">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="40" column="0">
+       <widget class="QLabel" name="addrLabel_40">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -1164,7 +1615,1063 @@
        </widget>
       </item>
       <item row="32" column="1">
-       <widget class="QLabel" name="valueMemLabel_32">
+       <widget class="QLabel" name="valueLabel_32">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="33" column="1">
+       <widget class="QLabel" name="valueLabel_33">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="34" column="1">
+       <widget class="QLabel" name="valueLabel_34">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="35" column="1">
+       <widget class="QLabel" name="valueLabel_35">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="36" column="1">
+       <widget class="QLabel" name="valueLabel_36">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="37" column="1">
+       <widget class="QLabel" name="valueLabel_37">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="38" column="1">
+       <widget class="QLabel" name="valueLabel_38">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="39" column="1">
+       <widget class="QLabel" name="valueLabel_39">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="40" column="1">
+       <widget class="QLabel" name="valueLabel_40">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="41" column="0">
+       <widget class="QLabel" name="addrLabel_41">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="42" column="0">
+       <widget class="QLabel" name="addrLabel_42">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="43" column="0">
+       <widget class="QLabel" name="addrLabel_43">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="44" column="0">
+       <widget class="QLabel" name="addrLabel_44">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="45" column="0">
+       <widget class="QLabel" name="addrLabel_45">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="46" column="0">
+       <widget class="QLabel" name="addrLabel_46">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="47" column="0">
+       <widget class="QLabel" name="addrLabel_47">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="48" column="0">
+       <widget class="QLabel" name="addrLabel_48">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="49" column="0">
+       <widget class="QLabel" name="addrLabel_49">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="50" column="0">
+       <widget class="QLabel" name="addrLabel_50">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="41" column="1">
+       <widget class="QLabel" name="valueLabel_41">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="42" column="1">
+       <widget class="QLabel" name="valueLabel_42">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="43" column="1">
+       <widget class="QLabel" name="valueLabel_43">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="44" column="1">
+       <widget class="QLabel" name="valueLabel_44">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="45" column="1">
+       <widget class="QLabel" name="valueLabel_45">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="46" column="1">
+       <widget class="QLabel" name="valueLabel_46">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="47" column="1">
+       <widget class="QLabel" name="valueLabel_47">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="48" column="1">
+       <widget class="QLabel" name="valueLabel_48">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="49" column="1">
+       <widget class="QLabel" name="valueLabel_49">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="50" column="1">
+       <widget class="QLabel" name="valueLabel_50">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="51" column="0">
+       <widget class="QLabel" name="addrLabel_51">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="52" column="0">
+       <widget class="QLabel" name="addrLabel_52">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="53" column="0">
+       <widget class="QLabel" name="addrLabel_53">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="54" column="0">
+       <widget class="QLabel" name="addrLabel_54">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="55" column="0">
+       <widget class="QLabel" name="addrLabel_55">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="56" column="0">
+       <widget class="QLabel" name="addrLabel_56">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="57" column="0">
+       <widget class="QLabel" name="addrLabel_57">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="58" column="0">
+       <widget class="QLabel" name="addrLabel_58">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="59" column="0">
+       <widget class="QLabel" name="addrLabel_59">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="60" column="0">
+       <widget class="QLabel" name="addrLabel_60">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="51" column="1">
+       <widget class="QLabel" name="valueLabel_51">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="52" column="1">
+       <widget class="QLabel" name="valueLabel_52">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="53" column="1">
+       <widget class="QLabel" name="valueLabel_53">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="54" column="1">
+       <widget class="QLabel" name="valueLabel_54">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="55" column="1">
+       <widget class="QLabel" name="valueLabel_55">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="56" column="1">
+       <widget class="QLabel" name="valueLabel_56">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="57" column="1">
+       <widget class="QLabel" name="valueLabel_57">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="58" column="1">
+       <widget class="QLabel" name="valueLabel_58">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="59" column="1">
+       <widget class="QLabel" name="valueLabel_59">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="60" column="1">
+       <widget class="QLabel" name="valueLabel_60">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="61" column="0">
+       <widget class="QLabel" name="addrLabel_61">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="62" column="0">
+       <widget class="QLabel" name="addrLabel_62">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="63" column="0">
+       <widget class="QLabel" name="addrLabel_63">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="64" column="0">
+       <widget class="QLabel" name="addrLabel_64">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="65" column="0">
+       <widget class="QLabel" name="addrLabel_65">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="66" column="0">
+       <widget class="QLabel" name="addrLabel_66">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="67" column="0">
+       <widget class="QLabel" name="addrLabel_67">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="68" column="0">
+       <widget class="QLabel" name="addrLabel_68">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="69" column="0">
+       <widget class="QLabel" name="addrLabel_69">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="70" column="0">
+       <widget class="QLabel" name="addrLabel_70">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="61" column="1">
+       <widget class="QLabel" name="valueLabel_61">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="62" column="1">
+       <widget class="QLabel" name="valueLabel_62">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="63" column="1">
+       <widget class="QLabel" name="valueLabel_63">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="64" column="1">
+       <widget class="QLabel" name="valueLabel_64">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="65" column="1">
+       <widget class="QLabel" name="valueLabel_65">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="66" column="1">
+       <widget class="QLabel" name="valueLabel_66">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="67" column="1">
+       <widget class="QLabel" name="valueLabel_67">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="68" column="1">
+       <widget class="QLabel" name="valueLabel_68">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="69" column="1">
+       <widget class="QLabel" name="valueLabel_69">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="70" column="1">
+       <widget class="QLabel" name="valueLabel_70">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="71" column="0">
+       <widget class="QLabel" name="addrLabel_71">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="72" column="0">
+       <widget class="QLabel" name="addrLabel_72">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="73" column="0">
+       <widget class="QLabel" name="addrLabel_73">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="74" column="0">
+       <widget class="QLabel" name="addrLabel_74">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="75" column="0">
+       <widget class="QLabel" name="addrLabel_75">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="76" column="0">
+       <widget class="QLabel" name="addrLabel_76">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="77" column="0">
+       <widget class="QLabel" name="addrLabel_77">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="78" column="0">
+       <widget class="QLabel" name="addrLabel_78">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="79" column="0">
+       <widget class="QLabel" name="addrLabel_79">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="80" column="0">
+       <widget class="QLabel" name="addrLabel_80">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="71" column="1">
+       <widget class="QLabel" name="valueLabel_71">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="72" column="1">
+       <widget class="QLabel" name="valueLabel_72">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="73" column="1">
+       <widget class="QLabel" name="valueLabel_73">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="74" column="1">
+       <widget class="QLabel" name="valueLabel_74">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="75" column="1">
+       <widget class="QLabel" name="valueLabel_75">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="76" column="1">
+       <widget class="QLabel" name="valueLabel_76">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="77" column="1">
+       <widget class="QLabel" name="valueLabel_77">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="78" column="1">
+       <widget class="QLabel" name="valueLabel_78">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="79" column="1">
+       <widget class="QLabel" name="valueLabel_79">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="80" column="1">
+       <widget class="QLabel" name="valueLabel_80">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
