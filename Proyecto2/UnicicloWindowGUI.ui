@@ -94,8 +94,8 @@
    <widget class="QLabel" name="registroMainLabel">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>40</y>
+      <x>330</x>
+      <y>60</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -109,11 +109,11 @@
      <string>Registros</string>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
+   <widget class="QScrollArea" name="registroArea">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>70</y>
+      <x>290</x>
+      <y>90</y>
       <width>161</width>
       <height>331</height>
      </rect>
@@ -127,7 +127,7 @@
        <x>0</x>
        <y>0</y>
        <width>142</width>
-       <height>476</height>
+       <height>676</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout">
@@ -162,7 +162,7 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QLabel" name="rxLabel2_2">
+       <widget class="QLabel" name="rxLabel">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -174,7 +174,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLabel" name="valueMemLabel2_2">
+       <widget class="QLabel" name="valueRegLabel">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -186,7 +186,7 @@
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="rxLabel3_2">
+       <widget class="QLabel" name="rxLabel_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -198,7 +198,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLabel" name="valueMemLabel3_2">
+       <widget class="QLabel" name="valueRegLabel_2">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -210,7 +210,7 @@
        </widget>
       </item>
       <item row="3" column="0">
-       <widget class="QLabel" name="rxLabel4_2">
+       <widget class="QLabel" name="rxLabel_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -222,7 +222,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLabel" name="valueMemLabel4_2">
+       <widget class="QLabel" name="valueRegLabel_3">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -234,7 +234,7 @@
        </widget>
       </item>
       <item row="4" column="0">
-       <widget class="QLabel" name="rxLabel2_3">
+       <widget class="QLabel" name="rxLabel_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -246,7 +246,7 @@
        </widget>
       </item>
       <item row="4" column="1">
-       <widget class="QLabel" name="valueMemLabel6_2">
+       <widget class="QLabel" name="valueRegLabel_4">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -258,7 +258,7 @@
        </widget>
       </item>
       <item row="5" column="0">
-       <widget class="QLabel" name="valueMemLabel2_3">
+       <widget class="QLabel" name="rxLabel_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -270,7 +270,7 @@
        </widget>
       </item>
       <item row="5" column="1">
-       <widget class="QLabel" name="rxLabel2_6">
+       <widget class="QLabel" name="valueRegLabel_5">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -282,7 +282,7 @@
        </widget>
       </item>
       <item row="10" column="1">
-       <widget class="QLabel" name="valueMemLabel4_4">
+       <widget class="QLabel" name="valueRegLabel_10">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -294,7 +294,7 @@
        </widget>
       </item>
       <item row="9" column="1">
-       <widget class="QLabel" name="valueMemLabel6_4">
+       <widget class="QLabel" name="valueRegLabel_9">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -306,7 +306,7 @@
        </widget>
       </item>
       <item row="8" column="1">
-       <widget class="QLabel" name="rxLabel2_7">
+       <widget class="QLabel" name="valueRegLabel_8">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -318,7 +318,7 @@
        </widget>
       </item>
       <item row="7" column="1">
-       <widget class="QLabel" name="valueMemLabel3_4">
+       <widget class="QLabel" name="valueRegLabel_7">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -330,7 +330,7 @@
        </widget>
       </item>
       <item row="6" column="1">
-       <widget class="QLabel" name="valueMemLabel2_4">
+       <widget class="QLabel" name="valueRegLabel_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -342,7 +342,7 @@
        </widget>
       </item>
       <item row="6" column="0">
-       <widget class="QLabel" name="rxLabel2_5">
+       <widget class="QLabel" name="rxLabel_6">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -354,7 +354,7 @@
        </widget>
       </item>
       <item row="7" column="0">
-       <widget class="QLabel" name="valueMemLabel4_3">
+       <widget class="QLabel" name="rxLabel_7">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -366,7 +366,7 @@
        </widget>
       </item>
       <item row="8" column="0">
-       <widget class="QLabel" name="valueMemLabel3_3">
+       <widget class="QLabel" name="rxLabel_8">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -378,7 +378,7 @@
        </widget>
       </item>
       <item row="9" column="0">
-       <widget class="QLabel" name="valueMemLabel6_3">
+       <widget class="QLabel" name="rxLabel_9">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -390,7 +390,7 @@
        </widget>
       </item>
       <item row="10" column="0">
-       <widget class="QLabel" name="rxLabel2_4">
+       <widget class="QLabel" name="rxLabel_10">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -402,7 +402,7 @@
        </widget>
       </item>
       <item row="11" column="0">
-       <widget class="QLabel" name="rxLabel4_3">
+       <widget class="QLabel" name="rxLabel_11">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -414,7 +414,7 @@
        </widget>
       </item>
       <item row="11" column="1">
-       <widget class="QLabel" name="rxLabel3_3">
+       <widget class="QLabel" name="valueRegLabel_11">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -426,7 +426,7 @@
        </widget>
       </item>
       <item row="12" column="0">
-       <widget class="QLabel" name="rxLabel2_8">
+       <widget class="QLabel" name="rxLabel_12">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -438,7 +438,7 @@
        </widget>
       </item>
       <item row="12" column="1">
-       <widget class="QLabel" name="rxLabel2_9">
+       <widget class="QLabel" name="valueRegLabel_12">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -450,7 +450,7 @@
        </widget>
       </item>
       <item row="22" column="1">
-       <widget class="QLabel" name="valueMemLabel6_6">
+       <widget class="QLabel" name="valueRegLabel_22">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -462,7 +462,7 @@
        </widget>
       </item>
       <item row="21" column="1">
-       <widget class="QLabel" name="valueMemLabel3_6">
+       <widget class="QLabel" name="valueRegLabel_21">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -474,7 +474,7 @@
        </widget>
       </item>
       <item row="20" column="1">
-       <widget class="QLabel" name="rxLabel3_5">
+       <widget class="QLabel" name="valueRegLabel_20">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -486,7 +486,7 @@
        </widget>
       </item>
       <item row="19" column="1">
-       <widget class="QLabel" name="rxLabel2_17">
+       <widget class="QLabel" name="valueRegLabel_19">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -498,7 +498,7 @@
        </widget>
       </item>
       <item row="18" column="1">
-       <widget class="QLabel" name="valueMemLabel4_6">
+       <widget class="QLabel" name="valueRegLabel_18">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -510,7 +510,7 @@
        </widget>
       </item>
       <item row="17" column="1">
-       <widget class="QLabel" name="rxLabel2_16">
+       <widget class="QLabel" name="valueRegLabel_17">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -522,7 +522,7 @@
        </widget>
       </item>
       <item row="16" column="1">
-       <widget class="QLabel" name="rxLabel2_14">
+       <widget class="QLabel" name="valueRegLabel_16">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -534,7 +534,7 @@
        </widget>
       </item>
       <item row="15" column="1">
-       <widget class="QLabel" name="valueMemLabel2_6">
+       <widget class="QLabel" name="valueRegLabel_15">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -546,7 +546,7 @@
        </widget>
       </item>
       <item row="14" column="1">
-       <widget class="QLabel" name="rxLabel4_5">
+       <widget class="QLabel" name="valueRegLabel_14">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -558,7 +558,7 @@
        </widget>
       </item>
       <item row="13" column="1">
-       <widget class="QLabel" name="rxLabel2_15">
+       <widget class="QLabel" name="valueRegLabel_13">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -570,7 +570,7 @@
        </widget>
       </item>
       <item row="13" column="0">
-       <widget class="QLabel" name="valueMemLabel6_5">
+       <widget class="QLabel" name="rxLabel_13">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -582,7 +582,7 @@
        </widget>
       </item>
       <item row="14" column="0">
-       <widget class="QLabel" name="rxLabel4_4">
+       <widget class="QLabel" name="rxLabel_14">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -594,7 +594,7 @@
        </widget>
       </item>
       <item row="15" column="0">
-       <widget class="QLabel" name="valueMemLabel3_5">
+       <widget class="QLabel" name="rxLabel_15">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -606,7 +606,7 @@
        </widget>
       </item>
       <item row="16" column="0">
-       <widget class="QLabel" name="rxLabel2_11">
+       <widget class="QLabel" name="rxLabel_16">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -618,7 +618,7 @@
        </widget>
       </item>
       <item row="17" column="0">
-       <widget class="QLabel" name="rxLabel2_10">
+       <widget class="QLabel" name="rxLabel_17">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -630,7 +630,7 @@
        </widget>
       </item>
       <item row="18" column="0">
-       <widget class="QLabel" name="rxLabel2_13">
+       <widget class="QLabel" name="rxLabel_18">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -642,7 +642,7 @@
        </widget>
       </item>
       <item row="19" column="0">
-       <widget class="QLabel" name="rxLabel2_12">
+       <widget class="QLabel" name="rxLabel_19">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -654,7 +654,7 @@
        </widget>
       </item>
       <item row="20" column="0">
-       <widget class="QLabel" name="rxLabel3_4">
+       <widget class="QLabel" name="rxLabel_20">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -666,7 +666,7 @@
        </widget>
       </item>
       <item row="21" column="0">
-       <widget class="QLabel" name="valueMemLabel4_5">
+       <widget class="QLabel" name="rxLabel_21">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -678,7 +678,247 @@
        </widget>
       </item>
       <item row="22" column="0">
-       <widget class="QLabel" name="valueMemLabel2_5">
+       <widget class="QLabel" name="rxLabel_22">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="0">
+       <widget class="QLabel" name="rxLabel_23">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="0">
+       <widget class="QLabel" name="rxLabel_24">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="0">
+       <widget class="QLabel" name="rxLabel_25">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="0">
+       <widget class="QLabel" name="rxLabel_26">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="27" column="0">
+       <widget class="QLabel" name="rxLabel_27">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="28" column="0">
+       <widget class="QLabel" name="rxLabel_28">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="29" column="0">
+       <widget class="QLabel" name="rxLabel_29">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="30" column="0">
+       <widget class="QLabel" name="rxLabel_30">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="31" column="0">
+       <widget class="QLabel" name="rxLabel_31">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="32" column="0">
+       <widget class="QLabel" name="rxLabel_32">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="23" column="1">
+       <widget class="QLabel" name="valueRegLabel_23">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="24" column="1">
+       <widget class="QLabel" name="valueRegLabel_24">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="25" column="1">
+       <widget class="QLabel" name="valueRegLabel_25">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="26" column="1">
+       <widget class="QLabel" name="valueRegLabel_26">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="27" column="1">
+       <widget class="QLabel" name="valueRegLabel_27">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="28" column="1">
+       <widget class="QLabel" name="valueRegLabel_28">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="29" column="1">
+       <widget class="QLabel" name="valueRegLabel_29">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="30" column="1">
+       <widget class="QLabel" name="valueRegLabel_30">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="31" column="1">
+       <widget class="QLabel" name="valueRegLabel_31">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="32" column="1">
+       <widget class="QLabel" name="valueRegLabel_32">
         <property name="font">
          <font>
           <pointsize>9</pointsize>
@@ -692,11 +932,11 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QLabel" name="registroMainLabel_2">
+   <widget class="QLabel" name="memoriaMainLabel">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>40</y>
+      <x>640</x>
+      <y>60</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -710,11 +950,11 @@
      <string>Memoria</string>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea_2">
+   <widget class="QScrollArea" name="memoriaArea">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>70</y>
+      <x>610</x>
+      <y>90</y>
       <width>161</width>
       <height>331</height>
      </rect>
@@ -726,7 +966,7 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>0</y>
+       <y>-978</y>
        <width>142</width>
        <height>1636</height>
       </rect>
