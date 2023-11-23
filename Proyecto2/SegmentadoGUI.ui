@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>SegmentadoWindow</class>
+ <widget class="QMainWindow" name="SegmentadoWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SegmentadoWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -373,7 +373,7 @@
        <x>0</x>
        <y>0</y>
        <width>142</width>
-       <height>548</height>
+       <height>476</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout">
