@@ -26,6 +26,7 @@ from PyQt6.QtGui import QPixmap
 from View.seleccionProc_ui import Ui_seleccionProceWindow
 from View.uniCiclo_ui import Ui_unicicloWindow
 from View.multiCiclo_ui import Ui_multicicloWindow
+from View.Segmentado_ui import Ui_SegmentadoWindow
 import fsm_multciclo
 app = QtWidgets.QApplication(sys.argv)
 
@@ -35,6 +36,10 @@ class Uniciclo(QMainWindow, Ui_unicicloWindow):
 
 
 class Multiciclo(QMainWindow, Ui_multicicloWindow):
+    def __init__(self):
+        super().__init__()
+
+class Segmentado(QMainWindow, Ui_SegmentadoWindow):
     def __init__(self):
         super().__init__()
 
@@ -54,6 +59,11 @@ class seleccionProceWindow(QMainWindow, Ui_seleccionProceWindow):
         ventanaMulticiclo = Multiciclo()
         ventanaMulticiclo.setupUi(self)
         ventanaMulticiclo.show()
+
+    def abrirSegmentado(self):
+        ventanaSegmentado = Segmentado()
+        ventanaSegmentado.setupUi(self)
+        ventanaSegmentado.show()
         
 
 
@@ -61,5 +71,7 @@ window = seleccionProceWindow()
 window.setupUi(window)
 window.unicicloButton.clicked.connect(lambda: window.abrirUniciclo())
 window.multicicloButton.clicked.connect(lambda : window.abrirMulticiclo())
+window.segmentadoStallsButton.clicked.connect(lambda : window.abrirSegmentado())
+window.segmentadoForwardingButton.clicked.connect(lambda : window.abrirSegmentado())
 window.show()
 sys.exit(app.exec())
