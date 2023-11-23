@@ -1,9 +1,9 @@
 import time
 class Processor(object):
     def __init__(self, cycleTime):
-        self.cycleTime = cycleTime
-        self.registerFile = [0]*32
-        self.memory = [None]*80
+        self.cycleTime = cycleTime #Tiempo de ciclo
+        self.registerFile = [0]*32 #Register File
+        self.memory = [None]*500 #Memory
         self.registerFileDict = {}
         self.registerFileDict["zero"] = 0
         self.registerFileDict["ra"] = 1
@@ -38,7 +38,7 @@ class Processor(object):
         self.registerFileDict["t5"] = 30
         self.registerFileDict["t6"] = 31
         self.labels = {}
-        self.pc = 0
+        self.pc = 0 #PC
         self.hlt = False
     def li(self, rd, imm):
         pass
