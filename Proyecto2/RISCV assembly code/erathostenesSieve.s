@@ -14,11 +14,10 @@ addi s4, s4, 1 #add one to the sieve size, for flow control reasons
 
 fill:
     sw t0, 100(t1) #save whats in t0 to addr in t1
-    addi t1, t1, 4 #increment save addr
+    addi t1, t1, 4 #increment saves addr
     addi t0, t0, 1 #increment counter
     beq t0, s4, eliminate #IF THe COUNTER REACHED N+1, STOP
     j fill #loop back to fill
-
 
 eliminate:
     addi t3, a4, -4 #start in the first position of the sieve
@@ -42,8 +41,6 @@ eliminate:
         add t6, t6, s6
         sw zero, 100(t6)
         bge s11, s4, nextPrime
-        j loopSieve
-        
-        
+        j loopSieve       
 end:
 call 10 #exit program
