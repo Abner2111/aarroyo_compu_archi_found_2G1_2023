@@ -23,17 +23,27 @@ from PySide6.QtWidgets import (QApplication, QFormLayout, QLCDNumber, QLabel,
 
 
 from View.seleccionProc_ui import Ui_seleccionProceWindow
-
+from View.uniCiclo_ui import Ui_unicicloWindow
 app = QtWidgets.QApplication(sys.argv)
 
+class Uniciclo(QMainWindow, Ui_unicicloWindow):
+    def __init__(self):
+        super().__init__()
+        
 
 class seleccionProceWindow(QMainWindow, Ui_seleccionProceWindow):
     def __int__(self):
         super().__init__()
         
+    def abrirUniciclo(self):
+        ventanaUniciclo = Uniciclo()
+        ventanaUniciclo.setupUi(self)
+        ventanaUniciclo.show()
         
+
 
 window = seleccionProceWindow()
 window.setupUi(window)
+window.unicicloButton.clicked.connect(lambda: window.abrirUniciclo())
 window.show()
 sys.exit(app.exec())
