@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ProcesadoresGUIWMBcHS.ui'
+## Form generated from reading UI file 'ProcesadoresGUIKwVpMG.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -16,8 +16,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QGridLayout, QLabel, QMainWindow,
-    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
-    QWidget)
+    QPushButton, QSizePolicy, QWidget)
 
 class Ui_seleccionProceWindow(object):
     def setupUi(self, seleccionProceWindow):
@@ -82,13 +81,6 @@ class Ui_seleccionProceWindow(object):
         self.estadisticasButton.setGeometry(QRect(650, 510, 121, 41))
         self.estadisticasButton.setFont(font)
         seleccionProceWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(seleccionProceWindow)
-        self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 830, 22))
-        seleccionProceWindow.setMenuBar(self.menubar)
-        self.statusbar = QStatusBar(seleccionProceWindow)
-        self.statusbar.setObjectName(u"statusbar")
-        seleccionProceWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(seleccionProceWindow)
 
