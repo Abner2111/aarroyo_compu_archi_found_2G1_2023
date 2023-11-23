@@ -142,7 +142,6 @@
     <property name="font">
      <font>
       <pointsize>14</pointsize>
-      <weight>75</weight>
       <italic>false</italic>
       <bold>true</bold>
       <strikeout>false</strikeout>
@@ -171,17 +170,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>830</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
