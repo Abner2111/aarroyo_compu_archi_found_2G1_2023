@@ -83,5 +83,17 @@ class SingleCycle(Processor):
             self.j(addr)
         elif opNem == "mul":
             self.mul(operation[1],operation[2],operation[3])
-
+        elif opNem == "lw":
+            self.lw(operation[1],operation[2],operation[3])
+        elif opNem == "bge":
+            addr = self.labels[operation[3]]
+            self.bge(operation[1],operation[2],addr)
+        elif opNem == "call":
+            self.hlt = True
         print(opNem)
+    def runAll(self):
+        for i in range(50):
+            if self.memory[i][-1:]:
+                self.labels[self.memory[i][:-1]] = i
+        while self.pc < 50 and not(self.hlt):
+            

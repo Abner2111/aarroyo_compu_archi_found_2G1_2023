@@ -39,6 +39,7 @@ class Processor(object):
         self.registerFileDict["t6"] = 31
         self.labels = {}
         self.pc = 0
+        self.hlt = False
     def li(self, rd, imm):
         pass
 
